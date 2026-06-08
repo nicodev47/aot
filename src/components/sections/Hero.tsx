@@ -22,9 +22,9 @@ export default function Hero() {
           </div>
 
           <h1>
-            Una strategia semplice che puoi utilizzare.
+            Una strategia ed un percorso di mentorship per farti ottenere 
             <br />
-            <span>Ottieni i tuoi primi risultati in 90 giorni.</span>
+            <span> i tuoi primi risultati in meno di 90 giorni.</span>
           </h1>
 
           <p className="hero-lead">
