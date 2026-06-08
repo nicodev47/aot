@@ -1,21 +1,17 @@
-import {
-  BarChart3,
-  MessageCircle,
-  Users,
-} from 'lucide-react'
+import { BarChart3, MessageCircle, Users } from 'lucide-react'
 
 const communityPoints = [
   {
     icon: MessageCircle,
-    text: 'Supporto e confronto',
+    text: 'Feedback continuo sulle esecuzioni',
   },
   {
     icon: Users,
-    text: 'Trader con lo stesso metodo',
+    text: 'Sessioni operative e confronto quotidiano',
   },
   {
     icon: BarChart3,
-    text: 'Analisi ed esempi reali',
+    text: 'Backtest, analisi ed esempi reali',
   },
 ]
 
@@ -29,13 +25,13 @@ export default function Community() {
           <h2>
             Tre mesi dentro un ambiente
             <br />
-            che parla <em>la tua stessa lingua.</em>
+            <em>incentivato alla tua crescita da trader.</em>
           </h2>
 
           <p>
-            La call 1:1 ti dà una direzione chiara. La community ti aiuta a
-            mantenere continuità: condividi analisi, confronta le tue
-            esecuzioni, fai domande e osserva il metodo applicato ogni giorno.
+            La chiamata privata ti dà la direzione. La community ti aiuta a
+            mantenere la continuità: condividi analisi, confronta esecuzioni,
+            fai domande e osserva come viene applicata la strategia ogni giorno.
           </p>
         </div>
 
@@ -51,15 +47,11 @@ export default function Community() {
         <div className="community-conversation">
           <div className="community-message community-message-left">
             <span>STUDENTE</span>
-
-            <p>
-              Questo era il setup corretto sulla presa di liquidità?
-            </p>
+            <p>Questo era il setup corretto sulla presa di liquidità?</p>
           </div>
 
           <div className="community-message community-message-right">
             <span>MENTOR</span>
-
             <p>
               Sì. Ottima lettura: ingresso dopo conferma, invalidazione già
               definita.
@@ -68,10 +60,7 @@ export default function Community() {
 
           <div className="community-message community-message-left community-message-last">
             <span>STUDENTE</span>
-
-            <p>
-              Chiaro. È molto più semplice ora che seguo la checklist.
-            </p>
+            <p>Chiaro. È molto più semplice ora che seguo la checklist.</p>
           </div>
         </div>
       </div>

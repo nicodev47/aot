@@ -22,17 +22,17 @@ export const faqs = [
   {
     question: 'La strategia funziona solo dalle 15:30 alle 16:10?',
     answer:
-      'No. Quella è la fascia che consigliamo perché coincide con l’apertura di New York e tende a offrire più opportunità e movimento. Il modello può però presentarsi anche in altre fasce orarie: durante la mentorship impari a riconoscere il contesto corretto, non a dipendere da un singolo orario.',
+      'No. Quella è la fascia operativa consigliata perché tende a offrire movimento e liquidità di qualità. I concetti e la strategia possono però essere utilizzati anche in altri momenti, imparando a riconoscere il contesto corretto.',
   },
   {
     question: 'Il percorso è adatto anche a chi parte da zero?',
     answer:
-      'Sì. La strategia viene spiegata da zero, con regole chiare, esempi reali e revisione dei tuoi trade. L’obiettivo non è riempirti di teoria, ma portarti rapidamente a riconoscere ed eseguire lo stesso setup in autonomia.',
+      'Sì. La strategia viene spiegata partendo dai concetti principali, con esempi pratici, modelli d’ingresso e sessioni di backtest. L’obiettivo è portarti a comprendere ed eseguire il processo in autonomia.',
   },
   {
-    question: 'Come funziona la mentorship 1:1?',
+    question: 'Come funziona la chiamata privata?',
     answer:
-      'Il percorso base include una call individuale dedicata alla spiegazione della strategia, all’impostazione del piano operativo e alla correzione iniziale degli errori. L’accesso alla community resta incluso per tutti i 3 mesi. Per chi desidera un affiancamento continuativo è disponibile anche il percorso avanzato fino al primo payout.',
+      'Durante la chiamata privata viene spiegata la strategia, vengono mostrati i modelli d’ingresso e costruiamo insieme un piano operativo. Dopo la call continui il percorso con tre mesi di community, sessioni giornaliere e confronto diretto.',
   },
   {
     question: 'Cosa succede dopo i primi 3 mesi?',
@@ -40,13 +40,8 @@ export const faqs = [
       'Puoi interrompere senza vincoli oppure continuare l’accesso alla community con un rinnovo mensile riservato e più conveniente. Il prezzo del rinnovo viene comunicato prima della scadenza.',
   },
   {
-    question: 'Posso usare NQ e MNQ?',
+    question: 'La strategia su che asset funziona?',
     answer:
-      'Sì. Il focus è sul Nasdaq Futures: NQ per chi ha già esperienza e gestione del rischio adeguata, MNQ per lavorare con size più contenute. La logica della strategia resta la stessa.',
-  },
-  {
-    question: 'I risultati mostrati sono garantiti?',
-    answer:
-      'No. Sono risultati e feedback reali di studenti, ma non rappresentano una promessa di guadagno. Il trading comporta rischio e i risultati dipendono da esperienza, disciplina, gestione del rischio e applicazione personale.',
+      'La strategia funziona principalmente sul Nasdaq, ma alcuni studenti preferiscono utilizzarla anche su altri asset per diversificare. Il focus del percorso resta comunque sull’applicazione ai Futures NQ e MNQ.',
   },
 ]

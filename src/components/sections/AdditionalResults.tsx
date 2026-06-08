@@ -8,16 +8,13 @@ const firstSliderImages = [
 
 export default function AdditionalResults() {
   return (
-    <section
-      className="section additional-results"
-      id="altri-risultati"
-    >
+    <section className="section additional-results" id="altri-risultati">
       <div className="container additional-results-heading">
-        <span className="eyebrow">ALTRI RISULTATI</span>
+        <span className="eyebrow">ALTRI TRAGUARDI RAGGIUNTI</span>
         <h2>
-          Altri progressi.
+          Abbiamo altri
           <br />
-          <em>Altre esecuzioni reali.</em>
+          <em>risultati.</em>
         </h2>
       </div>
 

@@ -8,15 +8,14 @@ export default function Results() {
       <div className="container results-intro">
         <span className="eyebrow">RISULTATI DELLA COMMUNITY</span>
         <h2>
-          La strategia è semplice da capire.
+          RISULTATI REALI DEI NOSTRI
           <br />
-          <em>I risultati iniziano dall’esecuzione.</em>
+          <em>STUDENTI.</em>
         </h2>
         <p>
-          Feedback, progressi e risultati condivisi da chi ha applicato il
-          metodo. Alcuni studenti hanno iniziato a vedere chiarezza già dopo la
-          spiegazione iniziale perché il processo è diretto e privo di
-          complicazioni inutili.
+          Non ascoltare solo quello che diciamo: guarda i risultati che
+          ottengono i nostri studenti all’interno della nostra community
+          privata.
         </p>
       </div>
 

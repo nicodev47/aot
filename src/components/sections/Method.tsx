@@ -1,34 +1,29 @@
-import {
-  BarChart3,
-  Clock3,
-  Crosshair,
-  ShieldCheck,
-} from 'lucide-react'
+import { BarChart3, Clock3, Crosshair, Users } from 'lucide-react'
 
 const methodItems = [
   {
     icon: Crosshair,
     number: '01',
-    title: 'Un solo mercato',
-    text: 'Focus su NQ e MNQ per conoscere davvero il comportamento del Nasdaq Futures, invece di saltare continuamente da uno strumento all’altro.',
+    title: 'Una strategia unica',
+    text: 'Impara una strategia che puoi utilizzare fin da subito per fare scalping all’interno del mercato.',
   },
   {
     icon: Clock3,
     number: '02',
-    title: 'Una finestra ad alta qualità',
-    text: 'La fascia 15:30–16:10 è consigliata per movimento e liquidità, ma non è un vincolo: impari a leggere il setup anche in altri momenti.',
+    title: 'Una finestra operativa ad alta qualità',
+    text: 'La fascia operativa consigliata è dalle 15:30 alle 16:10 per ottenere le performance migliori, ma non è un vincolo: puoi utilizzare i concetti e la strategia per leggere il mercato anche in altri momenti.',
   },
   {
     icon: BarChart3,
     number: '03',
-    title: 'Timeframe a 1 minuto',
-    text: 'Una lettura rapida e concreta, con livelli, invalidazione e obiettivi definiti prima dell’ingresso.',
+    title: 'Un sistema chiaro e preciso',
+    text: 'La strategia si basa sulla lettura della struttura di mercato avanzata e sulla comprensione delle dinamiche di liquidità.',
   },
   {
-    icon: ShieldCheck,
+    icon: Users,
     number: '04',
-    title: 'Rischio prima del profitto',
-    text: 'Ogni trade nasce da una gestione precisa. Nessun ingresso casuale, nessuna rincorsa del prezzo e nessuna size fuori controllo.',
+    title: 'Sessioni giornaliere e community',
+    text: 'Ottieni accesso alla community e partecipa alle sessioni di gruppo giornaliere, nelle quali analizziamo le esecuzioni ottimali della giornata e rispondiamo a dubbi e domande.',
   },
 ]
 
@@ -42,7 +37,7 @@ export default function Method() {
           <h2>
             Meno teoria dispersiva.
             <br />
-            Più <em>lettura ed esecuzione.</em>
+            <em>Molta pratica ed esecuzioni.</em>
           </h2>
         </div>
 
@@ -54,9 +49,7 @@ export default function Method() {
               </div>
 
               <span>{number}</span>
-
               <h3>{title}</h3>
-
               <p>{text}</p>
             </article>
           ))}

@@ -6,27 +6,30 @@ export default function Pricing() {
     <section className="section offer" id="offerta">
       <div className="container offer-grid">
         <div className="offer-copy">
-          <span className="eyebrow">UN SOLO PERCORSO</span>
-          <h2>Tutto ciò che serve per imparare, applicare e correggere.</h2>
+          <span className="eyebrow">UN SOLO PERCORSO, IL TUO RISULTATO</span>
+          <h2>
+            Tutto quello che ti serve per avere una strategia da applicare fin
+            dal primo giorno.
+          </h2>
           <p>
-            Una call individuale per comprendere la strategia, impostare il tuo
-            piano operativo e correggere i primi errori, seguita da tre mesi di
-            accesso alla community.
+            La chiamata privata ti dà la direzione e tutto ciò che ti serve per
+            comprendere la strategia e impostare il tuo piano operativo, seguita
+            da tre mesi di accesso all’interno della community.
           </p>
 
           <div className="fit-list">
             <h4>È adatto a te se:</h4>
             <span>
               <Check />
-              vuoi regole semplici e verificabili
+              vuoi regole semplici e chiare
             </span>
             <span>
               <Check />
-              puoi dedicare tempo a pratica e revisione
+              preferisci operare in scalping
             </span>
             <span>
               <Check />
-              accetti di lavorare sulla gestione del rischio
+              vuoi leggere la liquidità a mercato
             </span>
             <span>
               <Check />
@@ -43,7 +46,7 @@ export default function Pricing() {
             <span className="limited">Posti limitati</span>
           </div>
 
-          <h3>Ottieni l'accesso al percorso</h3>
+          <h3>Ottieni l’accesso al percorso</h3>
 
           <div className="price">
             <strong>€349</strong>
@@ -57,19 +60,15 @@ export default function Pricing() {
           <ul>
             <li>
               <Check />
-              1 call individuale con spiegazione della strategia
+              Call privata con spiegazione della strategia
             </li>
             <li>
               <Check />
-              Analisi del tuo livello e del tuo approccio operativo
+              Modelli d’ingresso e schematiche per le esecuzioni
             </li>
             <li>
               <Check />
-              Trading plan e checklist operative
-            </li>
-            <li>
-              <Check />
-              Revisione iniziale dei trade e degli errori
+              Accesso alle sessioni giornaliere
             </li>
             <li>
               <Check />

@@ -18,7 +18,7 @@ export default function PayoutMentorship() {
         <h2>
           Non solo una call.
           <br />
-          <em>Ti seguo fino al primo payout.</em>
+          <em>Ti seguiamo fino al primo payout.</em>
         </h2>
 
         <p className="payout-mentorship-lead">

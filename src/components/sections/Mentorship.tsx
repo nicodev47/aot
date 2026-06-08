@@ -4,33 +4,33 @@ import { scrollToSection } from '../../utils/navigation'
 const mentorshipItems = [
   {
     number: '01',
-    title: 'Strategia spiegata dall’inizio alla fine',
-    text: 'Partiamo dalla lettura del contesto e arriviamo al setup operativo: ingresso, invalidazione, gestione e uscita. Ogni passaggio viene spiegato con esempi concreti su NQ e MNQ, senza teoria dispersiva.',
+    title: 'Strategia completa e modelli d’ingresso',
+    text: 'Partiamo dai concetti principali della strategia, passiamo ai modelli d’ingresso e costruiamo un’analisi completa. Infine strutturiamo un piano operativo per consentirti di ottenere i tuoi primi risultati il prima possibile.',
   },
   {
     number: '02',
-    title: 'Call private e confronto diretto',
-    text: 'Durante le sessioni individuali puoi portare dubbi, grafici ed esecuzioni. Il percorso viene adattato al tuo livello, alla tua disponibilità e agli errori che stai realmente commettendo.',
+    title: 'Sessioni di gruppo e confronto diretto',
+    text: 'Durante le sessioni di gruppo approfondiamo le esecuzioni migliori di ogni giornata operativa, discutendo analisi, possibilità d’ingresso e gestione delle operazioni.',
   },
   {
     number: '03',
-    title: 'Revisione dei tuoi trade',
-    text: 'Analizziamo insieme trade corretti, entrate anticipate, occasioni saltate e problemi di gestione. Non ricevi un giudizio generico: capisci esattamente cosa mantenere e cosa correggere.',
+    title: 'Community e Q&A',
+    text: 'Analizziamo e revisioniamo le tue esecuzioni, identifichiamo trade corretti, entrate anticipate, occasioni saltate e problemi di gestione. Capisci esattamente cosa mantenere e cosa correggere.',
   },
   {
     number: '04',
-    title: 'Trading plan costruito su di te',
-    text: 'Trasformiamo il metodo in una checklist applicabile alla tua routine, con regole chiare per selezione del setup, rischio, numero di operazioni e momenti in cui restare fuori dal mercato.',
+    title: 'Dalla spiegazione all’autonomia',
+    text: 'L’obiettivo è renderti autonomo, così da sviluppare analisi indipendenti senza dipendere da call o segnali, prendendo decisioni motivate ed eseguendo con precisione.',
   },
   {
     number: '05',
-    title: 'Dalla spiegazione all’autonomia',
-    text: 'L’obiettivo non è renderti dipendente dalle call o dai segnali. Lavoriamo perché tu sappia riconoscere il contesto, prendere una decisione motivata e rivedere in autonomia la tua esecuzione.',
+    title: 'Sessioni di backtest e analisi',
+    text: 'Durante la settimana puoi partecipare a sessioni di backtest nelle quali applichiamo insieme la strategia a grafico, oltre a confrontarti con altri studenti per consolidare il metodo.',
   },
   {
     number: '06',
-    title: 'Continuità dentro la community',
-    text: 'Terminato il mese di lavoro 1:1, resti nella community per l’intera durata del pacchetto: puoi confrontarti, vedere applicazioni reali del metodo e continuare a consolidare il processo.',
+    title: 'Psicologia, disciplina e mentalità operativa',
+    text: 'Lavoriamo su disciplina, gestione emotiva, pazienza, controllo delle perdite e costruzione di una routine operativa stabile, sostenibile e ripetibile nel tempo.',
   },
 ]
 
@@ -41,15 +41,15 @@ export default function Mentorship() {
         <div className="mentorship-heading">
           <span className="eyebrow">CHIAMATA 1:1</span>
           <h2>
-            Non devi capire tutto da solo.
+            Non devi imparare tutto da solo.
             <br />
-            <em>Lavoriamo insieme sulla tua esecuzione.</em>
+            <em>Verrai guidato fin dai tuoi primi passi con la strategia.</em>
           </h2>
           <p className="large-copy">
-            Il primo mese non è una raccolta di video da guardare in autonomia.
-            È un lavoro diretto e personale: ti mostro la strategia, la
-            applichiamo su esempi reali e rivediamo i tuoi trade fino a
-            trasformare le regole in un processo chiaro, semplice e ripetibile.
+            La strategia ti verrà spiegata in modo semplice e chiaro durante una
+            chiamata privata. Oltre alla teoria, vedrai esempi pratici a grafico,
+            i modelli d’ingresso applicati e una sessione di backtest nella quale
+            analizzeremo insieme il mercato.
           </p>
         </div>
 
@@ -67,18 +67,15 @@ export default function Mentorship() {
 
         <div className="mentorship-summary">
           <div>
-            <span>1° MESE</span>
-            <strong>Mentorship privata, spiegazione e correzione</strong>
+            <span>1 CALL PRIVATA</span>
+            <strong>Strategia, modelli d’ingresso e piano operativo</strong>
           </div>
           <i />
           <div>
             <span>3 MESI</span>
-            <strong>Accesso completo alla community</strong>
+            <strong>Sessioni giornaliere e accesso alla community</strong>
           </div>
-          <button
-            className="text-link"
-            onClick={() => scrollToSection('offerta')}
-          >
+          <button className="text-link" onClick={() => scrollToSection('offerta')}>
             Vedi cosa include il percorso
             <ArrowRight size={17} />
           </button>

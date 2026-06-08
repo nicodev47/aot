@@ -18,21 +18,19 @@ export default function Hero() {
         >
           <div className="pill">
             <span className="live-dot" />
-            Mentorship privata Futures NQ & MNQ
+            Strategia Futures · Scalping sul timeframe 1 minuto
           </div>
 
           <h1>
-            Una strategia semplice.
+            Una strategia semplice che puoi utilizzare.
             <br />
-            <span>Un’esecuzione precisa.</span>
-            <br />
-            Risultati misurabili.
+            <span>Ottieni i tuoi primi risultati in 90 giorni.</span>
           </h1>
 
           <p className="hero-lead">
-            Impara uno scalping operativo sul grafico a 1 minuto, costruito per
-            leggere il Nasdaq Futures con regole chiare e senza ore davanti ai
-            grafici.
+            Impara una strategia di scalping con modelli d’ingresso ed
+            esecuzioni sul timeframe a 1 minuto, costruita per darti letture
+            precise e veloci all’interno del mercato.
           </p>
 
           <div className="hero-actions">
@@ -40,7 +38,7 @@ export default function Hero() {
               className="button button-primary"
               onClick={() => scrollToSection('offerta')}
             >
-              Scopri la mentorship
+              Scopri il percorso
               <ArrowRight size={18} />
             </button>
 
@@ -56,11 +54,11 @@ export default function Hero() {
           <div className="hero-proof">
             <div>
               <strong>1:1</strong>
-              <span>supporto diretto</span>
+              <span>spiegazione privata</span>
             </div>
             <div>
-              <strong>40 min</strong>
-              <span>finestra consigliata</span>
+              <strong>1 min</strong>
+              <span>timeframe operativo</span>
             </div>
             <div>
               <strong>3 mesi</strong>

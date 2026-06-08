@@ -8,20 +8,21 @@ export default function FinalCTA() {
 
       <div className="container final-inner">
         <span className="eyebrow">
-          IL PROSSIMO TRADE NON DEVE ESSERE UN’IPOTESI
+          DIVENTA LA NOSTRA PROSSIMA STORIA DI SUCCESSO
         </span>
         <h2>
-          Costruisci un processo che sai riconoscere, eseguire e rivedere.
+          Costruisci un processo che sai riconoscere, eseguire e replicare con
+          costanza.
         </h2>
         <p>
-          Entra nel percorso 1:1 e porta ordine nella tua operatività sui
-          Futures.
+          Entra nel percorso e porta struttura, chiarezza e continuità nella tua
+          operatività sui Futures.
         </p>
         <button
           className="button button-primary"
           onClick={() => window.open(BOOKING_URL, '_blank')}
         >
-          Candidati alla mentorship
+          Candidati al percorso
           <ArrowRight size={18} />
         </button>
       </div>

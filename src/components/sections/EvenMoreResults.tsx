@@ -13,11 +13,11 @@ export default function EvenMoreResults() {
       id="ancora-risultati"
     >
       <div className="container additional-results-heading">
-        <span className="eyebrow">ED ANCORA</span>
+        <span className="eyebrow">LA CRESCITA CONTINUA</span>
         <h2>
-          Il metodo resta lo stesso.
+          Ed altri
           <br />
-          <em>Cambia chi lo applica.</em>
+          <em>ancora.</em>
         </h2>
       </div>
 
