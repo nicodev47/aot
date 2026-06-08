@@ -4,12 +4,12 @@ import { scrollToSection } from '../../utils/navigation'
 const mentorshipItems = [
   {
     number: '01',
-    title: 'Strategia completa e modelli d’ingresso',
+    title: 'Strategia Completa e Modelli D’ingresso',
     text: 'Partiamo dai concetti principali della strategia, passiamo ai modelli d’ingresso e costruiamo un’analisi completa. Infine strutturiamo un piano operativo per consentirti di ottenere i tuoi primi risultati il prima possibile.',
   },
   {
     number: '02',
-    title: 'Sessioni di gruppo e confronto diretto',
+    title: 'Sessioni Di Gruppo e Confronto Diretto',
     text: 'Durante le sessioni di gruppo approfondiamo le esecuzioni migliori di ogni giornata operativa, discutendo analisi, possibilità d’ingresso e gestione delle operazioni.',
   },
   {
@@ -19,17 +19,17 @@ const mentorshipItems = [
   },
   {
     number: '04',
-    title: 'Dalla spiegazione all’autonomia',
+    title: 'Dalla Spiegazione All’autonomia',
     text: 'L’obiettivo è renderti autonomo, così da sviluppare analisi indipendenti senza dipendere da call o segnali, prendendo decisioni motivate ed eseguendo con precisione.',
   },
   {
     number: '05',
-    title: 'Sessioni di backtest e analisi',
+    title: 'Sessioni Di Backtest e Analisi',
     text: 'Durante la settimana puoi partecipare a sessioni di backtest nelle quali applichiamo insieme la strategia a grafico, oltre a confrontarti con altri studenti per consolidare il metodo.',
   },
   {
     number: '06',
-    title: 'Psicologia, disciplina e mentalità operativa',
+    title: 'Psicologia, Disciplina e Mentalità Operativa',
     text: 'Lavoriamo su disciplina, gestione emotiva, pazienza, controllo delle perdite e costruzione di una routine operativa stabile, sostenibile e ripetibile nel tempo.',
   },
 ]

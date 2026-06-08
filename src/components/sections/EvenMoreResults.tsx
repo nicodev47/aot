@@ -15,9 +15,7 @@ export default function EvenMoreResults() {
       <div className="container additional-results-heading">
         <span className="eyebrow">LA CRESCITA CONTINUA</span>
         <h2>
-          Ed altri
-          <br />
-          <em>ancora.</em>
+          Ed altri  <em>ancora.</em>
         </h2>
       </div>
 

@@ -12,9 +12,7 @@ export default function AdditionalResults() {
       <div className="container additional-results-heading">
         <span className="eyebrow">ALTRI TRAGUARDI RAGGIUNTI</span>
         <h2>
-          Abbiamo altri
-          <br />
-          <em>risultati.</em>
+          Abbiamo altri <em>risultati.</em>
         </h2>
       </div>
 

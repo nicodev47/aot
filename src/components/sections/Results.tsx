@@ -8,9 +8,9 @@ export default function Results() {
       <div className="container results-intro">
         <span className="eyebrow">RISULTATI DELLA COMMUNITY</span>
         <h2>
-          RISULTATI REALI DEI NOSTRI
+          Risultati reali dei nostri
           <br />
-          <em>STUDENTI.</em>
+          <em>Studenti.</em>
         </h2>
         <p>
           Non ascoltare solo quello che diciamo: guarda i risultati che
