@@ -7,7 +7,7 @@ export const resultImages = [
   '/results/result-3.png',
   '/results/result-4.png',
   '/results/result-5.png',
-  '/results/result-6.jpg',
+  '/results/result-6.jpeg',
   '/results/result-7.jpg',
 ]
 
