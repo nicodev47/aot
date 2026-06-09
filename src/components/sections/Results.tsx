@@ -38,11 +38,6 @@ export default function Results() {
           ))}
         </div>
       </div>
-
-      <div className="container disclaimer-mini">
-        I risultati mostrati sono individuali e non costituiscono garanzia di
-        performance future.
-      </div>
     </section>
   )
 }
