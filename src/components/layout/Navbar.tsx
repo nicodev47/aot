@@ -10,7 +10,6 @@ export default function Navbar() {
         >
           {/* <span className="brand-mark">ECLIPSE</span> */}
           <span>ECLIPSE TRADING CLUB</span>
-          <span className="brand-mark">SCALPING</span>
         </button>
 
         <nav className="nav-links">

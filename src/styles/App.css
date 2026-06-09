@@ -21,7 +21,7 @@
 }
 
 .section {
-  padding: 84px 0;
+  padding: 72px 0;
   position: relative;
 }
 
@@ -618,6 +618,8 @@
 }
 
 .mentorship {
+  padding-top: 58px;
+  padding-bottom: 72px;
   background: linear-gradient(180deg, #050505, #090909 50%, #050505);
 }
 
@@ -807,11 +809,12 @@
 
 .results {
   overflow: hidden;
+  padding-top: 58px;
 }
 
 .results-intro p {
   max-width: 860px;
-  margin: 22px auto 36px;
+  margin: 22px auto 30px;
 
   color: var(--muted);
   font-size: 1rem;
@@ -1433,7 +1436,20 @@
   }
 
   .section {
-    padding: 64px 0;
+    padding: 54px 0;
+  }
+
+  #metodo {
+    padding-bottom: 46px;
+  }
+
+  .mentorship {
+    padding-top: 46px;
+    padding-bottom: 58px;
+  }
+
+  .results {
+    padding-top: 48px;
   }
 
   .navbar {
@@ -1449,6 +1465,12 @@
     font-size: .78rem;
   }
 
+  .eyebrow {
+    font-size: 0.72rem;
+    line-height: 1.3;
+    letter-spacing: 0.13em;
+  }
+
   .hero {
     padding: 115px 0 70px;
     min-height: auto;
@@ -1456,8 +1478,11 @@
 
   .hero h1 {
     max-width: 100%;
-    font-size: clamp(2.35rem, 10.5vw, 3rem);
-    line-height: 1.03;
+    margin: 20px auto;
+
+    font-size: clamp(1.95rem, 8vw, 2.45rem);
+    line-height: 1.12;
+    letter-spacing: -0.035em;
   }
 
   .hero h1 br {
@@ -1502,15 +1527,42 @@
 
   .method-grid {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .method-card {
     min-height: auto;
+    padding: 18px 17px 20px;
+    border-radius: 14px;
+  }
+
+  .method-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+  }
+
+  .method-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .method-card > span {
+    top: 12px;
+    right: 14px;
+    font-size: 2.25rem;
   }
 
   .method-card h3 {
     min-height: 0;
-    margin-top: 54px;
+    margin: 42px 0 10px;
+    font-size: 0.98rem;
+    line-height: 1.35;
+  }
+
+  .method-card p {
+    font-size: 0.8rem;
+    line-height: 1.55;
   }
 
   .mentor-frame {
@@ -1577,10 +1629,14 @@
    SECTION TITLES
    ========================================================= */
 
+#metodo {
+  padding-bottom: 54px;
+}
+
 #metodo .section-head {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 52px;
+  margin-bottom: 42px;
   text-align: center;
 }
 
@@ -1638,7 +1694,7 @@
 
 .mentorship-heading {
   max-width: 1260px;
-  margin: 0 auto 42px;
+  margin: 0 auto 34px;
   text-align: center;
 }
 
@@ -1818,7 +1874,20 @@
   }
 
   .section {
-    padding: 96px 0;
+    padding: 82px 0;
+  }
+
+  #metodo {
+    padding-bottom: 60px;
+  }
+
+  .mentorship {
+    padding-top: 62px;
+    padding-bottom: 82px;
+  }
+
+  .results {
+    padding-top: 62px;
   }
 
   .hero-grid {
@@ -1896,7 +1965,20 @@
   }
 
   .section {
-    padding: 108px 0;
+    padding: 92px 0;
+  }
+
+  #metodo {
+    padding-bottom: 66px;
+  }
+
+  .mentorship {
+    padding-top: 66px;
+    padding-bottom: 92px;
+  }
+
+  .results {
+    padding-top: 66px;
   }
 
   .hero-grid {
@@ -1958,69 +2040,83 @@
 
 @media (max-width: 760px) {
   #metodo .section-head {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   #metodo .section-head h2 {
     max-width: 100%;
-    font-size: clamp(2.5rem, 11vw, 3.55rem);
-    line-height: 1.01;
+    font-size: clamp(2rem, 8.8vw, 2.75rem);
+    line-height: 1.14;
+    letter-spacing: -0.035em;
   }
 
   .mentorship-heading {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
     text-align: left;
   }
 
   .mentorship-heading h2 {
     max-width: 100%;
-    font-size: clamp(2.35rem, 10vw, 3.35rem);
-    line-height: 1.03;
+    margin-top: 14px;
+    margin-bottom: 18px;
+    font-size: clamp(2rem, 8.8vw, 2.75rem);
+    line-height: 1.14;
+    letter-spacing: -0.035em;
   }
 
   .mentorship-heading .large-copy {
-    font-size: 0.96rem;
-    line-height: 1.75;
+    font-size: 0.92rem;
+    line-height: 1.7;
   }
 
   #risultati .results-intro h2,
+  .community-heading h2,
   .offer-copy h2,
+  .payout-mentorship-inner h2,
+  .additional-results-heading h2,
   .faq-heading h2,
   .final-inner h2 {
     max-width: 100%;
-    font-size: clamp(2.2rem, 9.5vw, 3.15rem);
-    line-height: 1.03;
+    font-size: clamp(2rem, 8.8vw, 2.75rem);
+    line-height: 1.14;
+    letter-spacing: -0.035em;
+  }
+
+  .offer-copy h2 {
+    line-height: 1.16;
+    letter-spacing: -0.03em;
   }
 
   .mentor-features-wide {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 10px;
   }
 
   .mentor-feature-wide,
   .mentor-feature-wide:nth-child(odd),
   .mentor-feature-wide:nth-child(even) {
     min-height: auto;
-    padding: 22px 20px;
-    gap: 15px;
-    border-radius: 16px;
+    padding: 17px 15px;
+    gap: 12px;
+    border-radius: 14px;
   }
 
   .mentor-number {
-    width: 38px;
-    height: 38px;
-    border-radius: 10px;
-    font-size: 0.65rem;
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    font-size: 0.6rem;
   }
 
   .mentor-feature-wide strong {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.32;
   }
 
-  .mentor-feature-wide div>span {
-    margin-top: 8px;
-    font-size: 0.84rem;
-    line-height: 1.65;
+  .mentor-feature-wide div > span {
+    margin-top: 6px;
+    font-size: 0.78rem;
+    line-height: 1.52;
   }
 
   .mentor-feature-wide::after {
@@ -2047,13 +2143,18 @@
   }
 
   #risultati .results-intro {
-    width: min(100% - 28px, 600px);
+    width: min(100% - 32px, 600px);
     max-width: 600px;
   }
 
+  #risultati .results-intro h2 {
+    margin-top: 14px;
+  }
+
   #risultati .results-intro p {
-    margin: 22px auto 38px;
-    font-size: 0.9rem;
+    margin: 18px auto 30px;
+    font-size: 0.88rem;
+    line-height: 1.65;
   }
 
   .result-card {
@@ -2477,5 +2578,38 @@
     max-width: 100%;
     font-size: clamp(2.25rem, 9.6vw, 3.25rem);
     line-height: 1.03;
+  }
+}
+
+@media (max-width: 420px) {
+  .section {
+    padding: 44px 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.8rem, 7.5vw, 2.15rem);
+    line-height: 1.13;
+  }
+
+  #metodo .section-head h2,
+  .mentorship-heading h2,
+  #risultati .results-intro h2,
+  .community-heading h2,
+  .offer-copy h2,
+  .payout-mentorship-inner h2,
+  .additional-results-heading h2,
+  .faq-heading h2,
+  .final-inner h2 {
+    font-size: clamp(1.85rem, 8.5vw, 2.4rem);
+  }
+
+  .method-card {
+    padding: 16px 15px 18px;
+  }
+
+  .mentor-feature-wide,
+  .mentor-feature-wide:nth-child(odd),
+  .mentor-feature-wide:nth-child(even) {
+    padding: 15px 14px;
   }
 }

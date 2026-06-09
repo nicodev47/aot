@@ -4,18 +4,11 @@ export const BOOKING_URL =
 export const resultImages = [
   '/results/result-1.jpg',
   '/results/result-2.jpg',
-  '/results/result-3.jpg',
-  '/results/result-4.jpg',
-  '/results/result-5.jpg',
+  '/results/result-3.png',
+  '/results/result-4.png',
+  '/results/result-5.png',
   '/results/result-6.jpg',
   '/results/result-7.jpg',
-  '/results/result-8.jpg',
-  '/results/result-9.jpg',
-  '/results/result-10.jpg',
-  '/results/result-11.jpg',
-  '/results/result-12.png',
-  '/results/result-13.png',
-  '/results/result-14.png',
 ]
 
 export const faqs = [

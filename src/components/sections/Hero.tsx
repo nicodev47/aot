@@ -52,15 +52,15 @@ export default function Hero() {
           <div className="hero-proof">
             <div>
               <strong>1:1</strong>
-              <span>spiegazione privata</span>
+              <span>Spiegazione Privata</span>
             </div>
             <div>
               <strong>1 min</strong>
-              <span>timeframe operativo</span>
+              <span>Timeframe Operativo</span>
             </div>
             <div>
               <strong>3 mesi</strong>
-              <span>di community inclusa</span>
+              <span>Di community Inclusa</span>
             </div>
           </div>
         </motion.div>

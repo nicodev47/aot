@@ -84,11 +84,6 @@ export default function Pricing() {
             Ottieni l'accesso
             <ArrowRight size={18} />
           </button>
-
-          <small>
-            La call serve a capire se il percorso è adatto al tuo livello e ai
-            tuoi obiettivi.
-          </small>
         </article>
       </div>
     </section>

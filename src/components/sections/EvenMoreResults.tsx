@@ -25,10 +25,6 @@ export default function EvenMoreResults() {
         label="Ulteriore risultato studente"
       />
 
-      <div className="container disclaimer-mini additional-disclaimer">
-        I risultati mostrati sono individuali e non costituiscono garanzia di
-        performance future.
-      </div>
     </section>
   )
 }

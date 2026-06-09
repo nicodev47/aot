@@ -25,7 +25,7 @@ export default function Community() {
           <h2>
             Tre mesi dentro un ambiente
             <br />
-            <em>incentivato alla tua crescita da trader.</em>
+            <em> incentivato alla tua crescita da trader.</em>
           </h2>
 
           <p>
