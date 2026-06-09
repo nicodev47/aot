@@ -1,6 +1,3 @@
-import { ArrowRight } from 'lucide-react'
-import { scrollToSection } from '../../utils/navigation'
-
 const mentorshipItems = [
   {
     number: '01',
