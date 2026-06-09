@@ -25,7 +25,7 @@ export default function Navbar() {
           className="nav-cta"
           onClick={() => scrollToSection('offerta')}
         >
-          Candidati ora
+          Partecipa Ora
         </button>
       </div>
     </header>

@@ -18,7 +18,7 @@ export default function Hero() {
         >
           <div className="pill">
             <span className="live-dot" />
-            Strategia Futures · Scalping sul timeframe 1 minuto
+            Strategia Scalping con Esecuzioni Giornaliere
           </div>
 
           <h1>
@@ -28,9 +28,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero-lead">
-            Impara una strategia di scalping con modelli d’ingresso ed
-            esecuzioni sul timeframe a 1 minuto, costruita per darti letture
-            precise e veloci all’interno del mercato.
+            Scopri una strategia di scalping con modelli d’ingresso ed esecuzioni sul timeframe a 1 minuto, costruita per darti esecuzioni precise e costanti all’interno del mercato.
           </p>
 
           <div className="hero-actions">
@@ -38,7 +36,7 @@ export default function Hero() {
               className="button button-primary"
               onClick={() => scrollToSection('offerta')}
             >
-              Scopri il percorso
+              Accedi al Percorso
               <ArrowRight size={18} />
             </button>
 
@@ -47,7 +45,7 @@ export default function Hero() {
               onClick={() => scrollToSection('risultati')}
             >
               <Play size={17} fill="currentColor" />
-              Guarda i risultati
+              Vai  ai Risultati
             </button>
           </div>
 

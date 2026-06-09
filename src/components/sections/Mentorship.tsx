@@ -64,22 +64,6 @@ export default function Mentorship() {
             </article>
           ))}
         </div>
-
-        <div className="mentorship-summary">
-          <div>
-            <span>1 CALL PRIVATA</span>
-            <strong>Strategia, modelli d’ingresso e piano operativo</strong>
-          </div>
-          <i />
-          <div>
-            <span>3 MESI</span>
-            <strong>Sessioni giornaliere e accesso alla community</strong>
-          </div>
-          <button className="text-link" onClick={() => scrollToSection('offerta')}>
-            Vedi cosa include il percorso
-            <ArrowRight size={17} />
-          </button>
-        </div>
       </div>
     </section>
   )

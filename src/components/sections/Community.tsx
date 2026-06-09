@@ -11,7 +11,7 @@ const communityPoints = [
   },
   {
     icon: BarChart3,
-    text: 'Backtest, analisi ed esempi reali',
+    text: 'Sessioni di backtest, Analisi e Casi Studio',
   },
 ]
 

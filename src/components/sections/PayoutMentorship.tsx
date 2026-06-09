@@ -13,7 +13,7 @@ export default function PayoutMentorship() {
   return (
     <section className="section payout-mentorship" id="affiancamento">
       <div className="container payout-mentorship-inner">
-        <span className="eyebrow">AFFIANCAMENTO AVANZATO</span>
+        <span className="eyebrow">PER CHI VUOLE DI PIÚ</span>
 
         <h2>
           Non solo una call.

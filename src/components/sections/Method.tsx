@@ -4,20 +4,20 @@ const methodItems = [
   {
     icon: Crosshair,
     number: '01',
-    title: 'Una Strategia Unica',
-    text: 'Impara una strategia che puoi utilizzare fin da subito per fare scalping all’interno del mercato. Utilizza i nostri modelli d’ingresso per imparare a leggere la liquidità e la struttura di mercato a livello avanzato',
+    title: 'Una Strategia di Scalping',
+    text: 'Impara una strategia che puoi utilizzare fin da subito per fare scalping all’interno del mercato. Utilizza i nostri modelli d’ingresso per imparare a leggere la liquidità e la struttura di mercato a livello avanzato.',
   },
   {
     icon: Clock3,
     number: '02',
     title: 'Una Finestra Operativa ad  Alta Qualità',
-    text: 'La fascia operativa consigliata è dalle 15:30 alle 16:10 per le performance migliori, ma non è un vincolo, puoi utilizzare i concetti e la strategia per leggere il mercato anche il altri momenti.',
+    text: 'La fascia operativa consigliata è dalle 15:30 alle 16:10 per le performance migliori, ma non è un vincolo, puoi utilizzare i concetti e la strategia per leggere il mercato quando vuoi.',
   },
   {
     icon: BarChart3,
     number: '03',
-    title: 'Un sistema chiaro e preciso',
-    text: 'La strategia si basa sulla lettura della struttura di mercato avanzata e sulla comprensione delle dinamiche di liquidità.',
+    title: 'Un Sistema Chiaro e Preciso',
+    text: 'La strategia si basa sulla lettura della struttura di mercato avanzata e sulla comprensione delle dinamiche di liquidità attraverso modelli d’ingresso ed esecuzioni precise',
   },
   {
     icon: Users,
