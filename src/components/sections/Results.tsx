@@ -1,7 +1,26 @@
-import { resultImages } from '../../data/siteData'
+import {
+  additionalResultImages,
+  evenMoreResultImages,
+  resultImages,
+} from '../../data/siteData'
 import ResultSlider from './ResultSlider'
 
+function splitImagesForRows(images: string[]) {
+  const firstRowImages = images.filter((_, index) => index % 2 === 0)
+  const secondRowImages = images.filter((_, index) => index % 2 !== 0)
+
+  return { firstRowImages, secondRowImages }
+}
+
 export default function Results() {
+  const allResultImages = [
+    ...resultImages,
+    ...additionalResultImages,
+    ...evenMoreResultImages,
+  ]
+
+  const { firstRowImages, secondRowImages } = splitImagesForRows(allResultImages)
+
   return (
     <section className="section results" id="risultati">
       <div className="container results-intro">
@@ -18,11 +37,10 @@ export default function Results() {
         </p>
       </div>
 
-      <ResultSlider images={resultImages} label="Risultato studente" />
+      <ResultSlider images={firstRowImages} label="Risultato studente" />
       <ResultSlider
-        images={resultImages}
+        images={secondRowImages}
         reverse
-        offset={Math.ceil(resultImages.length / 2)}
         label="Feedback studente"
       />
     </section>
