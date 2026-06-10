@@ -46,7 +46,7 @@ export default function Community() {
 
         <div className="community-video-wrap">
           <iframe
-            src="https://www.youtube.com/embed/1YUstoag6II"
+            src="https://www.youtube-nocookie.com/embed/1YUstoag6II?controls=0&rel=0&modestbranding=1&iv_load_policy=3&playsinline=1&disablekb=1"
             title="Eclipse Trading Club - Community"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
