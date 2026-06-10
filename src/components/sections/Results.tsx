@@ -1,8 +1,7 @@
 import { resultImages } from '../../data/siteData'
+import ResultSlider from './ResultSlider'
 
 export default function Results() {
-  const marqueeImages = [...resultImages, ...resultImages]
-
   return (
     <section className="section results" id="risultati">
       <div className="container results-intro">
@@ -19,25 +18,13 @@ export default function Results() {
         </p>
       </div>
 
-      <div className="results-marquee">
-        <div className="results-track">
-          {marqueeImages.map((src, index) => (
-            <div className="result-card" key={`first-${index}`}>
-              <img src={src} alt={`Risultato studente ${index + 1}`} />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="results-marquee reverse">
-        <div className="results-track">
-          {marqueeImages.map((src, index) => (
-            <div className="result-card" key={`second-${index}`}>
-              <img src={src} alt={`Feedback studente ${index + 1}`} />
-            </div>
-          ))}
-        </div>
-      </div>
+      <ResultSlider images={resultImages} label="Risultato studente" />
+      <ResultSlider
+        images={resultImages}
+        reverse
+        offset={Math.ceil(resultImages.length / 2)}
+        label="Feedback studente"
+      />
     </section>
   )
 }
