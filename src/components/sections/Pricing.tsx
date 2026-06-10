@@ -12,7 +12,7 @@ export default function Pricing() {
             dal primo giorno.
           </h2>
           <p>
-            Avrai accesso ad una chiamata privata dove ti verrà spiegata tutta la strategia step-by-step nel dettaglio e strutturare il tuo piano operativo. Avrai accesso a Sessioni Giornaliere dove troverai le entrate ottimali di ogni giornata seguiti da tre mesi di accesso all'interno della community
+            Avrai accesso ad una chiamata privata dove ti verrà spiegata tutta la strategia step-by-step nel dettaglio e strutturare il tuo piano operativo. Avrai accesso a Sessioni Giornaliere dove troverai le entrate ottimali di ogni giornata seguiti da tre mesi di accesso all'interno della community.
           </p>
 
           <div className="fit-list">
@@ -43,7 +43,7 @@ export default function Pricing() {
             <span>PERCORSO COMPLETO</span>
           </div>
 
-          <h3>Ottieni l’accesso al percorso</h3>
+          <h3>Ottieni l’Accesso al Percorso</h3>
 
           <div className="price">
             <strong>€349</strong>
@@ -81,7 +81,7 @@ export default function Pricing() {
             className="button button-primary full"
             onClick={() => window.open(BOOKING_URL, '_blank')}
           >
-            Ottieni l'accesso
+            Ottieni l'Accesso
             <ArrowRight size={18} />
           </button>
         </article>
