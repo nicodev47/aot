@@ -886,6 +886,50 @@
    COMMUNITY - FULL WIDTH SECTION
    ========================================================= */
 
+/* =========================================================
+   COMMUNITY VIDEO
+   ========================================================= */
+
+.community-video-wrap {
+  position: relative;
+
+  width: min(980px, 100%);
+  margin: 52px auto 0;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 22px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(255, 51, 77, 0.12),
+      transparent 38%
+    ),
+    #0b0b0c;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.42),
+    0 0 70px rgba(255, 51, 77, 0.08);
+}
+
+.community-video-wrap::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.community-video-wrap iframe {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+}
+
 .community-section {
   position: relative;
   overflow: hidden;
@@ -896,17 +940,13 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 
   background:
-    radial-gradient(
-      circle at 50% 20%,
+    radial-gradient(circle at 50% 20%,
       rgba(255, 51, 77, 0.09),
-      transparent 34%
-    ),
-    linear-gradient(
-      180deg,
+      transparent 34%),
+    linear-gradient(180deg,
       #070708 0%,
       #090909 50%,
-      #060607 100%
-    );
+      #060607 100%);
 }
 
 .community-section-inner {
@@ -934,11 +974,9 @@
 .community-heading h2 em {
   font-style: normal;
 
-  background: linear-gradient(
-    100deg,
-    #ff334d,
-    #ff9ba7
-  );
+  background: linear-gradient(100deg,
+      #ff334d,
+      #ff9ba7);
 
   -webkit-background-clip: text;
   background-clip: text;
@@ -1030,11 +1068,9 @@
 .community-message-right {
   align-self: flex-end;
 
-  background: linear-gradient(
-    135deg,
-    rgba(70, 17, 26, 0.94),
-    rgba(27, 10, 13, 0.96)
-  );
+  background: linear-gradient(135deg,
+      rgba(70, 17, 26, 0.94),
+      rgba(27, 10, 13, 0.96));
 
   border-color: rgba(255, 51, 77, 0.18);
 }
@@ -1412,6 +1448,7 @@
     max-width: 900px;
     font-size: clamp(2.7rem, 7vw, 4rem);
   }
+
   .footer-inner {
     width: min(100% - 48px, 900px);
 
@@ -1547,7 +1584,7 @@
     height: 19px;
   }
 
-  .method-card > span {
+  .method-card>span {
     top: 12px;
     right: 14px;
     font-size: 2.25rem;
@@ -1592,6 +1629,7 @@
     justify-content: flex-start;
     white-space: nowrap;
   }
+
   .footer {
     padding: 28px 0 34px;
   }
@@ -2113,7 +2151,7 @@
     line-height: 1.32;
   }
 
-  .mentor-feature-wide div > span {
+  .mentor-feature-wide div>span {
     margin-top: 6px;
     font-size: 0.78rem;
     line-height: 1.52;
@@ -2186,8 +2224,9 @@
     font-size: clamp(3.35rem, 3.4vw, 4.55rem);
   }
 
-  .community-conversation {
-    width: min(1040px, 100%);
+  .community-video-wrap {
+    width: min(1080px, 100%);
+    margin-top: 58px;
   }
 }
 
@@ -2206,8 +2245,10 @@
     display: none;
   }
 
-  .community-conversation {
-    margin-top: 38px;
+  .community-video-wrap {
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 18px;
   }
 }
 
@@ -2242,22 +2283,10 @@
     border-radius: 12px;
   }
 
-  .community-conversation {
-    gap: 12px;
-    margin-top: 34px;
-  }
-
-  .community-message {
-    width: 92%;
-    padding: 16px 17px;
-  }
-
-  .community-message-right {
-    align-self: flex-end;
-  }
-
-  .community-message-last {
-    margin-left: 0;
+  .community-video-wrap {
+    width: 100%;
+    margin-top: 32px;
+    border-radius: 15px;
   }
 }
 
@@ -2654,7 +2683,7 @@
     align-self: center;
   }
 
-  .method-card > span {
+  .method-card>span {
     display: none;
   }
 
@@ -2736,4 +2765,3 @@
     line-height: 1.5;
   }
 }
-

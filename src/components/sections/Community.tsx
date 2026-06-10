@@ -44,24 +44,13 @@ export default function Community() {
           ))}
         </div>
 
-        <div className="community-conversation">
-          <div className="community-message community-message-left">
-            <span>STUDENTE</span>
-            <p>Questo era il setup corretto sulla presa di liquidità?</p>
-          </div>
-
-          <div className="community-message community-message-right">
-            <span>MENTOR</span>
-            <p>
-              Sì. Ottima lettura: ingresso dopo conferma, invalidazione già
-              definita.
-            </p>
-          </div>
-
-          <div className="community-message community-message-left community-message-last">
-            <span>STUDENTE</span>
-            <p>Chiaro. È molto più semplice ora che seguo la checklist.</p>
-          </div>
+        <div className="community-video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/1YUstoag6II"
+            title="Eclipse Trading Club - Community"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
         </div>
       </div>
     </section>
