@@ -3,13 +3,41 @@ export const BOOKING_URL =
 
 export const resultImages = [
   '/results/result-1.jpg',
-  '/results/result-2.jpg',
+  '/results/result-8.png',
   '/results/result-3.png',
-  '/results/result-4.png',
-  '/results/result-5.png',
-  '/results/result-6.jpeg',
+  '/results/result-12.png',
   '/results/result-7.jpg',
+  '/results/result-16.png',
+  '/results/result-20.png',
+  '/results/result-24.png',
+  '/results/result-28.png',
+  '/results/result-10.png',
 ]
+
+export const additionalResultImages = [
+  '/results/result-2.jpg',
+  '/results/result-9.png',
+  '/results/result-4.png',
+  '/results/result-14.png',
+  '/results/result-18.png',
+  '/results/result-22.png',
+  '/results/result-26.png',
+  '/results/result-11.png',
+  '/results/result-15.png',
+]
+
+export const evenMoreResultImages = [
+  '/results/result-5.png',
+  '/results/result-13.png',
+  '/results/result-6.jpeg',
+  '/results/result-17.png',
+  '/results/result-19.png',
+  '/results/result-21.png',
+  '/results/result-23.png',
+  '/results/result-25.png',
+  '/results/result-27.png',
+]
+
 
 export const faqs = [
   {

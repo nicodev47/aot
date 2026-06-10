@@ -1,10 +1,5 @@
-import { resultImages } from '../../data/siteData'
+import { evenMoreResultImages } from '../../data/siteData'
 import ResultSlider from './ResultSlider'
-
-const secondSliderImages = [
-  ...resultImages.slice(4),
-  ...resultImages.slice(0, 4),
-]
 
 export default function EvenMoreResults() {
   return (
@@ -20,7 +15,7 @@ export default function EvenMoreResults() {
       </div>
 
       <ResultSlider
-        images={secondSliderImages}
+        images={evenMoreResultImages}
         reverse
         label="Ulteriore risultato studente"
       />

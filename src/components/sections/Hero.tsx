@@ -22,7 +22,7 @@ export default function Hero() {
           </div>
 
           <h1>
-            Una strategia ed un percorso di mentorship per farti ottenere 
+            Una strategia ed un percorso di mentorship per farti ottenere
             <br />
             <span> i tuoi primi risultati in meno di 90 giorni.</span>
           </h1>
@@ -34,7 +34,7 @@ export default function Hero() {
           <div className="hero-actions">
             <button
               className="button button-primary"
-              onClick={() => scrollToSection('offerta')}
+              onClick={() => scrollToSection('offerta', 'end')}
             >
               Accedi al Percorso
               <ArrowRight size={18} />

@@ -832,12 +832,12 @@
   display: flex;
   gap: 16px;
   width: max-content;
-  animation: marquee 105s linear infinite;
+  animation: marquee 170s linear infinite;
 }
 
 .results-marquee.reverse .results-track {
   animation-direction: reverse;
-  animation-duration: 120s;
+  animation-duration: 180s;
 }
 
 .result-card {
@@ -2687,7 +2687,7 @@
   .results-track {
     width: max-content;
     min-width: max-content;
-    animation: marquee-mobile 72s linear infinite;
+    animation: marquee-mobile 145s linear infinite;
     will-change: transform;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
@@ -2696,7 +2696,7 @@
 
   .results-marquee.reverse .results-track {
     animation-name: marquee-mobile-reverse;
-    animation-duration: 82s;
+    animation-duration: 160s;
     animation-direction: normal;
   }
 

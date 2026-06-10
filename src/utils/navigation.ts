@@ -1,3 +1,9 @@
-export function scrollToSection(id: string): void {
-  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+export function scrollToSection(
+  id: string,
+  block: ScrollLogicalPosition = 'start'
+): void {
+  document.getElementById(id)?.scrollIntoView({
+    behavior: 'smooth',
+    block,
+  })
 }
