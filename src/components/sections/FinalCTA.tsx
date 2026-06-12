@@ -25,7 +25,7 @@ export default function FinalCTA() {
           className="button button-primary"
           onClick={scrollToPricing}
         >
-          Ottieni l'accesso
+          Ottieni l'Accesso
           <ArrowRight size={18} />
         </button>
       </div>
