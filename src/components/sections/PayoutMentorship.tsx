@@ -1,5 +1,5 @@
 import { ArrowRight, Check } from 'lucide-react'
-import { BOOKING_URL } from '../../data/siteData'
+import { DISCOVERY_CALL_URL } from '../../data/siteData'
 
 const supportPoints = [
   'Affiancamento continuativo dopo la spiegazione della strategia',
@@ -45,7 +45,7 @@ export default function PayoutMentorship() {
 
           <button
             className="button button-primary payout-main-cta"
-            onClick={() => window.open(BOOKING_URL, '_blank')}
+            onClick={() => window.open(DISCOVERY_CALL_URL, '_blank')}
           >
             Prenota la call conoscitiva
             <ArrowRight size={18} />

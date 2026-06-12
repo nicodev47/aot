@@ -3,6 +3,9 @@ export const BOOKING_URL =
 
 export const CHECKOUT_URL = 'https://buy.stripe.com/14A14oaZI6811qt3HTaEE08'
 
+export const DISCOVERY_CALL_URL =
+  'https://calendly.com/nicocoach/personal-mentorship-call-w-nico-clone'
+
 export const resultImages = [
   '/results/result-1.webp',
   '/results/result-12.webp',
