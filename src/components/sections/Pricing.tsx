@@ -1,5 +1,5 @@
 import { ArrowRight, Check } from 'lucide-react'
-import { BOOKING_URL } from '../../data/siteData'
+import { CHECKOUT_URL } from '../../data/siteData'
 
 export default function Pricing() {
   return (
@@ -79,7 +79,7 @@ export default function Pricing() {
 
           <button
             className="button button-primary full"
-            onClick={() => window.open(BOOKING_URL, '_blank')}
+            onClick={() => window.open(CHECKOUT_URL, '_blank')}
           >
             Ottieni l'Accesso
             <ArrowRight size={18} />

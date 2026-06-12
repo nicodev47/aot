@@ -1,5 +1,7 @@
 export const BOOKING_URL =
-  'https://calendly.com/nicocoach/personal-mentorship-call-w-nico-clone'
+  'https://calendly.com/nicocoach/spiegazione-strategia-con-nico-eclipse-trading-club'
+
+export const CHECKOUT_URL = 'https://buy.stripe.com/14A14oaZI6811qt3HTaEE08'
 
 export const resultImages = [
   '/results/result-1.webp',

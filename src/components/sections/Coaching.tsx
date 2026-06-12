@@ -1,4 +1,5 @@
 import PrimaryButton from '../ui/PrimaryButton'
+import { BOOKING_URL } from '../../data/siteData'
 
 const coachingFeatures = [
   'Struttura di mercato avanzata',
@@ -33,12 +34,7 @@ export default function Coaching() {
             </div>
 
             <PrimaryButton
-              onClick={() =>
-                window.open(
-                  'https://calendly.com/nicocoach/personal-mentorship-call-w-nico-clone',
-                  '_blank'
-                )
-              }
+              onClick={() => window.open(BOOKING_URL, '_blank')}
             >
               Prenota una Call Gratuita
             </PrimaryButton>
