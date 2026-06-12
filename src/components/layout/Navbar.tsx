@@ -1,8 +1,21 @@
+import { useEffect, useState } from 'react'
 import { scrollToSection } from '../../utils/navigation'
 
 export default function Navbar() {
+  const [isHidden, setIsHidden] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsHidden(window.scrollY > 24)
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <header className="navbar">
+    <header className={`navbar${isHidden ? ' navbar-hidden' : ''}`}>
       <div className="container nav-inner">
         <button
           className="brand"

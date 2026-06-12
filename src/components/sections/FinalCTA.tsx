@@ -1,7 +1,10 @@
 import { ArrowRight } from 'lucide-react'
-import { BOOKING_URL } from '../../data/siteData'
 
 export default function FinalCTA() {
+  const scrollToPricing = () => {
+    document.getElementById('offerta')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <section className="final-cta">
       <div className="final-glow" />
@@ -20,9 +23,9 @@ export default function FinalCTA() {
         </p>
         <button
           className="button button-primary"
-          onClick={() => window.open(BOOKING_URL, '_blank')}
+          onClick={scrollToPricing}
         >
-          Candidati al percorso
+          Ottieni l'accesso
           <ArrowRight size={18} />
         </button>
       </div>

@@ -79,6 +79,14 @@
   background: rgba(5, 5, 5, .72);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(255, 255, 255, .06);
+  transition: transform .28s ease, opacity .28s ease;
+  will-change: transform;
+}
+
+.navbar-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .nav-inner {
