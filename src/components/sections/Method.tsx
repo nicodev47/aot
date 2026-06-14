@@ -2,28 +2,28 @@ import { BarChart3, Clock3, Crosshair, Users } from 'lucide-react'
 
 const methodItems = [
   {
-    icon: Crosshair,
+    icon: Users,
     number: '01',
-    title: 'Una Strategia di Scalping',
-    text: 'Impara una strategia che puoi utilizzare fin da subito per fare scalping all’interno del mercato. Utilizza i nostri modelli d’ingresso per imparare a leggere la liquidità e la struttura di mercato a livello avanzato.',
+    title: 'Chiamata Introduttiva Privata 1-1',
+    text: "La strategia ti verrà spiegata step-by-step all'interno di una chiamata privata individuale, dove ti verranno spiegati tutti i concetti chiave e i modelli d'ingresso utilizzando esempi pratici direttamente sul grafico. Alla fine della chiamata avrai un chiaro piano operativo ed una strategia da utilizzare fin da subito.",
   },
   {
-    icon: Clock3,
+    icon: Crosshair,
     number: '02',
-    title: 'Una Finestra Operativa ad  Alta Qualità',
-    text: 'La fascia operativa consigliata è dalle 15:30 alle 16:10 per le performance migliori, ma non è un vincolo, puoi utilizzare i concetti e la strategia per leggere il mercato quando vuoi.',
+    title: "Strategia Completa e Modelli D'ingresso",
+    text: "Partiamo dai concetti principali della strategia, passiamo ai modelli d'ingresso e costruiamo un'analisi completa. Infine strutturiamo un piano operativo per consentirti di ottenere i tuoi primi risultati il prima possibile.",
   },
   {
     icon: BarChart3,
     number: '03',
-    title: 'Un Sistema Chiaro e Preciso',
-    text: 'La strategia si basa sulla lettura della struttura di mercato avanzata e sulla comprensione delle dinamiche di liquidità attraverso modelli d’ingresso ed esecuzioni precise',
+    title: 'Sessioni Di Gruppo e Confronto Diretto',
+    text: "Durante le sessioni di gruppo approfondiamo le esecuzioni migliori di ogni giornata operativa, discutendo analisi, possibilità d'ingresso e gestione delle operazioni.",
   },
   {
-    icon: Users,
+    icon: Clock3,
     number: '04',
-    title: 'Sessioni Giornaliere & Community',
-    text: 'Ottieni accesso alla community dove giornalmente potrai partecipare a sessioni di gruppo dove andremo a vedere le esecuzioni ottimali della giornata e rispondere ad eventuali dubbi e domande.',
+    title: 'Community e Q&A',
+    text: 'Analizziamo e revisioniamo le tue esecuzioni, identifichiamo trade corretti, entrate anticipate, occasioni saltate e problemi di gestione. Capisci esattamente cosa mantenere e cosa correggere.',
   },
 ]
 
@@ -35,9 +35,9 @@ export default function Method() {
           <span className="eyebrow">IL METODO</span>
 
           <h2>
-            Meno teoria dispersiva.
+            Non devi imparare tutto da solo.
             <br />
-            <em>Molta pratica ed esecuzioni.</em>
+            <em>Verrai guidato fin dai tuoi primi passi con la strategia.</em>
           </h2>
         </div>
 

@@ -1,4 +1,4 @@
-import { scrollToSection } from '../../utils/navigation'
+import { scrollToPricing, scrollToSection } from '../../utils/navigation'
 
 export default function Navbar() {
   return (
@@ -14,15 +14,14 @@ export default function Navbar() {
 
         <nav className="nav-links">
           <button onClick={() => scrollToSection('metodo')}>Strategia</button>
-          <button onClick={() => scrollToSection('mentorship')}>Mentorship</button>
           <button onClick={() => scrollToSection('risultati')}>Risultati</button>
-          <button onClick={() => scrollToSection('affiancamento')}>Affiancamento</button>
+          <button onClick={() => scrollToSection('affiancamento')}>Percorso avanzato</button>
           <button onClick={() => scrollToSection('faq')}>FAQ</button>
         </nav>
 
         <button
           className="nav-cta"
-          onClick={() => scrollToSection('offerta')}
+          onClick={scrollToPricing}
         >
           Partecipa Ora
         </button>

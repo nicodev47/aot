@@ -12,8 +12,7 @@ export default function Pricing() {
             dal primo giorno.
           </h2>
           <p>
-            Avrai accesso ad una chiamata privata dove ti verrà spiegata tutta la strategia step-by-step nel dettaglio e strutturare il tuo piano operativo. Avrai accesso a Sessioni Giornaliere dove troverai le entrate ottimali di ogni giornata seguiti da tre mesi di accesso all'interno della community.
-          </p>
+            Avrai accesso a Sessioni Giornaliere dove troverai le entrate ottimali di ogni giornata insieme all'accesso mensile all'interno della community. In aggiunta, come bonus il primo mese avrai accesso ad una chiamata privata dove ti verrà spiegata tutta la strategia step-by-step nel dettaglio per strutturare il tuo piano operativo.  </p>
 
           <div className="fit-list">
             <h4>È adatto a te se:</h4>
@@ -36,7 +35,7 @@ export default function Pricing() {
           </div>
         </div>
 
-        <article className="price-card">
+        <article className="price-card" id="pricing-card">
           <div className="price-glow" />
 
           <div className="price-top">
@@ -46,12 +45,12 @@ export default function Pricing() {
           <h3>Ottieni l’Accesso al Percorso</h3>
 
           <div className="price">
-            <strong>€349</strong>
-            <span>/ 3 mesi</span>
+            <strong>€99</strong>
+            <span>/ mese</span>
           </div>
 
           <p className="price-note">
-            Pagamento unico · nessun rinnovo automatico
+            Abbonamento mensile · nessun vincolo 
           </p>
 
           <ul>
@@ -65,15 +64,19 @@ export default function Pricing() {
             </li>
             <li>
               <Check />
-              Accesso alle sessioni giornaliere
+              Accesso alle Sessioni Giornaliere
             </li>
             <li>
               <Check />
-              3 mesi di accesso alla community
+              Accesso alla Community Privata
             </li>
             <li>
               <Check />
-              Rinnovo mensile scontato facoltativo
+              Supporto 1-1 Diretto
+            </li>
+            <li>
+              <Check />
+              Piano operativo applicabile fin dal primo giorno
             </li>
           </ul>
 

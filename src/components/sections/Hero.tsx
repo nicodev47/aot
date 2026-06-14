@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowRight, Play } from 'lucide-react'
 import VideoEmbed from '../ui/VideoEmbed'
-import { scrollToSection } from '../../utils/navigation'
+import { scrollToPricing, scrollToSection } from '../../utils/navigation'
 
 export default function Hero() {
   return (
@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="hero-actions">
             <button
               className="button button-primary"
-              onClick={() => scrollToSection('offerta', 'end')}
+              onClick={scrollToPricing}
             >
               Accedi al Percorso
               <ArrowRight size={18} />
@@ -74,8 +74,11 @@ export default function Hero() {
         >
           <div className="hero-video">
             <VideoEmbed
-              videoId="ONtkr27QR-0"
-              title="Eclipse Trading Club - Strategia"
+              videoId="1K8jF45Er9A"
+              title="Eclipse Trading Club - Community"
+              autoPlay
+              muted
+              loop
             />
           </div>
         </motion.div>

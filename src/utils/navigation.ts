@@ -7,3 +7,11 @@ export function scrollToSection(
     block,
   })
 }
+
+export function scrollToPricing(): void {
+  const targetId = window.matchMedia('(max-width: 980px)').matches
+    ? 'pricing-card'
+    : 'offerta'
+
+  scrollToSection(targetId)
+}

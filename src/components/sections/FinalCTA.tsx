@@ -1,10 +1,7 @@
 import { ArrowRight } from 'lucide-react'
+import { scrollToPricing } from '../../utils/navigation'
 
 export default function FinalCTA() {
-  const scrollToPricing = () => {
-    document.getElementById('offerta')?.scrollIntoView({ behavior: 'smooth' })
-  }
-
   return (
     <section className="final-cta">
       <div className="final-glow" />

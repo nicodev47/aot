@@ -1,55 +1,59 @@
-import { ArrowRight, Check } from 'lucide-react'
+import { Check } from 'lucide-react'
+import callVisual from '../../assets/images/nico-call.png'
 import { DISCOVERY_CALL_URL } from '../../data/siteData'
 
 const supportPoints = [
-  'Affiancamento continuativo dopo la spiegazione della strategia',
-  'Revisione dei trade e correzione degli errori operativi',
-  'Supporto nella gestione della challenge e dell’account funded',
-  'Adattamento del piano operativo alla tua routine e al tuo rischio',
-  'Confronto diretto fino al raggiungimento del primo payout',
+  'Vuole accelerare il proprio percorso verso il primo payout',
+  'Preferisce essere seguito 1-1 privatamente',
+  'Sta cercando un confronto diretto durante il proprio percorso',
+  'Cerca maggiore fiducia e consapevolezza nelle proprie esecuzioni',
 ]
+
+const calendlyEmbedUrl = `${DISCOVERY_CALL_URL}?hide_gdpr_banner=1&background_color=09090a&text_color=ffffff&primary_color=ff334d`
 
 export default function PayoutMentorship() {
   return (
     <section className="section payout-mentorship" id="affiancamento">
       <div className="container payout-mentorship-inner">
-        <span className="eyebrow">PER CHI VUOLE DI PIÚ</span>
+        <div className="payout-mentorship-copy">
+          <div className="payout-call-visual">
+            <img src={callVisual} alt="Nico Coach" />
+          </div>
 
-        <h2>
-          Non solo una call.
-          <br />
-          <em>Ti seguiamo fino al primo payout.</em>
-        </h2>
+          <span className="eyebrow">PER CHI VUOLE DI PIÙ</span>
 
-        <p className="payout-mentorship-lead">
-          Un percorso separato pensato per chi vuole essere seguito anche dopo
-          la spiegazione iniziale. Lavoriamo insieme sull’esecuzione, sulle
-          challenge e sulla gestione dell’account fino al raggiungimento del
-          primo payout.
-        </p>
+          <h2>
+            Per chi cerca un percorso di mentorship.
+            <br />
+            <em>Ti seguiamo fino al primo payout.</em>
+          </h2>
 
-        <div className="payout-support-list">
-          {supportPoints.map((point) => (
-            <div className="payout-support-item" key={point}>
-              <Check />
-              <span>{point}</span>
-            </div>
-          ))}
-        </div>
-
-        <div className="payout-mentorship-footer">
-          <p>
-            Durata, modalità e investimento vengono definiti durante la call in
-            base al tuo livello e al punto da cui parti.
+          <p className="payout-mentorship-lead">
+            Un percorso dedicato a chi desidera qualcosa di più del semplice accesso alla community. È possibile andare a strutturare un percorso di mentorship direttamente con me dove andremo a lavorare sulla tua situazione nel dettaglio ed andremo a strutturare insieme un percorso di mentorship privato fino al raggiungimento del tuo primo payout.
           </p>
 
-          <button
-            className="button button-primary payout-main-cta"
-            onClick={() => window.open(DISCOVERY_CALL_URL, '_blank')}
-          >
-            Prenota la call conoscitiva
-            <ArrowRight size={18} />
-          </button>
+          <div className="payout-support">
+            <h3>Questo percorso è perfetto per chi:</h3>
+
+            <div className="payout-support-list">
+              {supportPoints.map((point) => (
+                <div className="payout-support-item" key={point}>
+                  <Check />
+                  <span>{point}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="payout-calendly-card">
+          <div className="payout-calendly-clip">
+            <iframe
+              className="payout-calendly-frame"
+              src={calendlyEmbedUrl}
+              title="Prenota la call conoscitiva"
+            />
+          </div>
         </div>
       </div>
     </section>
