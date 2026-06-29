@@ -39,18 +39,18 @@ export default function Pricing() {
           <div className="price-glow" />
 
           <div className="price-top">
-            <span>PERCORSO COMPLETO</span>
+            <span>Ottieni l’Accesso al Percorso</span>
           </div>
 
-          <h3>Ottieni l’Accesso al Percorso</h3>
+          <h3>Primo Mese + Chiamata di Mentorship 1-1</h3>
 
           <div className="price">
-            <strong>€99</strong>
-            <span>/ mese</span>
+            <strong>99€</strong>
+            <span></span>
           </div>
 
           <p className="price-note">
-            Abbonamento mensile · nessun vincolo 
+           Poi si rinnova a 45€ al Mese · Nessun Vincolo 
           </p>
 
           <ul>

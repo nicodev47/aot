@@ -1,7 +1,7 @@
 export const BOOKING_URL =
   'https://calendly.com/nicocoach/spiegazione-strategia-con-nico-eclipse-trading-club'
 
-export const CHECKOUT_URL = 'https://buy.stripe.com/cNi5kE4Bk9kd3yBcepaEE09'
+export const CHECKOUT_URL = 'https://buy.stripe.com/5kQfZi3xgeExglna6haEE0a'
 
 export const DISCOVERY_CALL_URL =
   'https://calendly.com/nicocoach/personal-mentorship-call-w-nico-clone'
@@ -56,12 +56,12 @@ export const faqs = [
   {
     question: 'Come funziona la chiamata privata?',
     answer:
-      'Durante la chiamata privata viene spiegata la strategia, vengono mostrati i modelli d’ingresso e costruiamo insieme un piano operativo. Dopo la call continui il percorso con tre mesi di community, sessioni giornaliere e confronto diretto.',
+      'Durante la chiamata privata viene spiegata la strategia, vengono mostrati i modelli d’ingresso e costruiamo insieme un piano operativo. Dopo la call continui il percorso con community, sessioni giornaliere e confronto diretto.',
   },
   {
-    question: 'Cosa succede dopo i primi 3 mesi?',
+    question: 'Cosa succede dopo il primo mese?',
     answer:
-      'Puoi interrompere senza vincoli oppure continuare l’accesso alla community con un rinnovo mensile riservato e più conveniente. Il prezzo del rinnovo viene comunicato prima della scadenza.',
+      'Il primo mese paghi €99 e include iscrizione, chiamata privata e accesso completo. Dal mese successivo il rinnovo è di €45/mese e puoi interrompere senza vincoli quando vuoi.',
   },
   {
     question: 'La strategia su che asset funziona?',
