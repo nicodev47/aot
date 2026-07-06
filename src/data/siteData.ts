@@ -43,16 +43,17 @@ export const evenMoreResultImages = [
   '/results/result-22.webp',
 ]
 export const faqs = [
+    {
+    question: 'Il percorso è adatto anche a chi parte da zero?',
+    answer:
+      'Sì. La strategia viene spiegata partendo dai concetti principali, con esempi pratici, modelli d’ingresso e sessioni di backtest. L’obiettivo è portarti a comprendere ed eseguire il processo in autonomia.',
+  },
   {
     question: 'La strategia funziona solo dalle 15:30 alle 16:10?',
     answer:
       'No. Quella è la fascia operativa consigliata perché tende a offrire movimento e liquidità di qualità. I concetti e la strategia possono però essere utilizzati anche in altri momenti, imparando a riconoscere il contesto corretto.',
   },
-  {
-    question: 'Il percorso è adatto anche a chi parte da zero?',
-    answer:
-      'Sì. La strategia viene spiegata partendo dai concetti principali, con esempi pratici, modelli d’ingresso e sessioni di backtest. L’obiettivo è portarti a comprendere ed eseguire il processo in autonomia.',
-  },
+
   {
     question: 'Come funziona la chiamata privata?',
     answer:
