@@ -1,7 +1,16 @@
 import { ArrowRight, Check } from 'lucide-react'
 import { CHECKOUT_URL } from '../../data/siteData'
+import { trackEvent } from '../../utils/tracking'
 
 export default function Pricing() {
+  function handleCheckoutClick(): void {
+    trackEvent('cta_ottieni_accesso_click', {
+      location: 'pricing',
+      label: "Ottieni l'Accesso",
+    })
+    window.open(CHECKOUT_URL, '_blank')
+  }
+
   return (
     <section className="section offer" id="offerta">
       <div className="container offer-grid">
@@ -82,7 +91,7 @@ export default function Pricing() {
 
           <button
             className="button button-primary full"
-            onClick={() => window.open(CHECKOUT_URL, '_blank')}
+            onClick={handleCheckoutClick}
           >
             Ottieni l'Accesso
             <ArrowRight size={18} />

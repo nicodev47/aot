@@ -1,7 +1,16 @@
 import { ArrowRight } from 'lucide-react'
 import { scrollToPricing } from '../../utils/navigation'
+import { trackEvent } from '../../utils/tracking'
 
 export default function FinalCTA() {
+  function handleAccessClick(): void {
+    trackEvent('cta_ottieni_accesso_click', {
+      location: 'final_cta',
+      label: "Ottieni l'Accesso",
+    })
+    scrollToPricing()
+  }
+
   return (
     <section className="final-cta">
       <div className="final-glow" />
@@ -20,7 +29,7 @@ export default function FinalCTA() {
         </p>
         <button
           className="button button-primary"
-          onClick={scrollToPricing}
+          onClick={handleAccessClick}
         >
           Ottieni l'Accesso
           <ArrowRight size={18} />

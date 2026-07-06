@@ -2,8 +2,25 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Play } from 'lucide-react'
 import VideoEmbed from '../ui/VideoEmbed'
 import { scrollToPricing, scrollToSection } from '../../utils/navigation'
+import { trackEvent } from '../../utils/tracking'
 
 export default function Hero() {
+  function handleAccessClick(): void {
+    trackEvent('cta_accesso_percorso_click', {
+      location: 'hero',
+      label: 'Accedi al Percorso',
+    })
+    scrollToPricing()
+  }
+
+  function handleResultsClick(): void {
+    trackEvent('results_click', {
+      location: 'hero',
+      label: 'Vai ai Risultati',
+    })
+    scrollToSection('risultati')
+  }
+
   return (
     <section className="hero">
       <div className="hero-noise" />
@@ -35,7 +52,7 @@ export default function Hero() {
           <div className="hero-actions">
             <button
               className="button button-primary"
-              onClick={scrollToPricing}
+              onClick={handleAccessClick}
             >
               Accedi al Percorso
               <ArrowRight size={18} />
@@ -43,10 +60,10 @@ export default function Hero() {
 
             <button
               className="button button-ghost"
-              onClick={() => scrollToSection('risultati')}
+              onClick={handleResultsClick}
             >
               <Play size={17} fill="currentColor" />
-              Vai  ai Risultati
+              Vai ai Risultati
             </button>
           </div>
 

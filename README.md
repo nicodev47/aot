@@ -1,5 +1,17 @@
 # React + TypeScript + Vite
 
+## Tracking
+
+Per abilitare Google Tag Manager in produzione, configurare su Netlify la variabile ambiente:
+
+```env
+VITE_GTM_ID=GTM-XXXXXXX
+```
+
+Il file `.env` non deve essere committato.
+
+GA4 e Meta Pixel vanno configurati dentro Google Tag Manager, non direttamente nel codice.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
