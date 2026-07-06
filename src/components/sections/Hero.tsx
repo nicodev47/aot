@@ -77,7 +77,7 @@ export default function Hero() {
               <span>Timeframe Operativo</span>
             </div>
             <div>
-              <strong>3 mesi</strong>
+              <strong>1 mese</strong>
               <span>Di community Inclusa</span>
             </div>
           </div>
