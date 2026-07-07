@@ -15,27 +15,28 @@ export default function Pricing() {
     <section className="section offer" id="offerta">
       <div className="container offer-grid">
         <div className="offer-copy">
-          <span className="eyebrow">UN SOLO PERCORSO, IL TUO RISULTATO</span>
+          <span className="eyebrow">Accesso alla Community</span>
           <h2>
             Tutto quello che ti serve per avere una strategia da applicare fin
             dal primo giorno.
           </h2>
           <p>
-            Avrai accesso a Sessioni Giornaliere dove troverai le entrate ottimali di ogni giornata insieme all'accesso mensile all'interno della community. In aggiunta, come bonus il primo mese avrai accesso ad una chiamata privata dove ti verrà spiegata tutta la strategia step-by-step nel dettaglio per strutturare il tuo piano operativo.  </p>
+            All'interno della Community verrai introdotto alla strategia tramite una chiamata di coaching dove ti verrà spiegata la strategia step-by-step, andremo a vedere tutti i concetti e come applicarli a mercato insieme ai nostri modelli d'ingresso. Avrai accesso inoltre a Sessioni Giornaliere dove troverai le entrate ottimali di ogni giornata, feedbacks sulle tue analisi e supporto diretto.
+          </p>
 
           <div className="fit-list">
             <h4>È adatto a te se:</h4>
             <span>
               <Check />
-              vuoi regole semplici e chiare
+              Hai già esperienza all’interno dei mercati.
             </span>
             <span>
               <Check />
-              preferisci operare in scalping
+              cerchi una strategia di scalping
             </span>
             <span>
               <Check />
-              vuoi leggere la liquidità a mercato
+              vuoi un processo chiaro e replicabile
             </span>
             <span>
               <Check />
@@ -48,19 +49,18 @@ export default function Pricing() {
           <div className="price-glow" />
 
           <div className="price-top">
-            <span>Ottieni l’Accesso al Percorso</span>
+            <span>Ottieni l'Accesso al Percorso</span>
           </div>
 
-          <h3>Primo Mese + Chiamata di Mentorship 1-1</h3>
+          <h3>Accesso Mensile</h3>
 
           <div className="price">
-            <strong>99€</strong>
-            <span></span>
+            <div className="price-value">
+              <strong>45&euro;</strong>
+              <span>/ mese</span>
+            </div>
+            <p>Nessun vincolo</p>
           </div>
-
-          <p className="price-note">
-           Poi si rinnova a 45€ al Mese · Nessun Vincolo 
-          </p>
 
           <ul>
             <li>
@@ -81,11 +81,7 @@ export default function Pricing() {
             </li>
             <li>
               <Check />
-              Supporto 1-1 Diretto
-            </li>
-            <li>
-              <Check />
-              Piano operativo applicabile fin dal primo giorno
+              Supporto per dubbi e domande
             </li>
           </ul>
 

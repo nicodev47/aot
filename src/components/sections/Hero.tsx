@@ -1,24 +1,24 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Play } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import VideoEmbed from '../ui/VideoEmbed'
 import { scrollToPricing, scrollToSection } from '../../utils/navigation'
 import { trackEvent } from '../../utils/tracking'
 
 export default function Hero() {
   function handleAccessClick(): void {
-    trackEvent('cta_accesso_percorso_click', {
+    trackEvent('cta_accesso_community_click', {
       location: 'hero',
-      label: 'Accedi al Percorso',
+      label: 'Accedi alla Community',
     })
     scrollToPricing()
   }
 
-  function handleResultsClick(): void {
-    trackEvent('results_click', {
+  function handleMentorshipClick(): void {
+    trackEvent('mentorship_click', {
       location: 'hero',
-      label: 'Vai ai Risultati',
+      label: 'Scopri il Percorso di Mentorship',
     })
-    scrollToSection('risultati')
+    scrollToSection('mentorship')
   }
 
   return (
@@ -36,7 +36,7 @@ export default function Hero() {
         >
           <div className="pill">
             <span className="live-dot" />
-            Strategia Scalping con Esecuzioni Giornaliere
+            Community e Percorso di Mentorship 1-1
           </div>
 
           <h1>
@@ -54,32 +54,17 @@ export default function Hero() {
               className="button button-primary"
               onClick={handleAccessClick}
             >
-              Accedi al Percorso
+              Accedi alla Community
               <ArrowRight size={18} />
             </button>
 
             <button
               className="button button-ghost"
-              onClick={handleResultsClick}
+              onClick={handleMentorshipClick}
             >
-              <Play size={17} fill="currentColor" />
-              Vai ai Risultati
+              Scopri il Percorso di Mentorship
+              <ArrowRight size={18} />
             </button>
-          </div>
-
-          <div className="hero-proof">
-            <div>
-              <strong>1:1</strong>
-              <span>Spiegazione Privata</span>
-            </div>
-            <div>
-              <strong>1 min</strong>
-              <span>Timeframe Operativo</span>
-            </div>
-            <div>
-              <strong>1 mese</strong>
-              <span>Di community Inclusa</span>
-            </div>
           </div>
         </motion.div>
 

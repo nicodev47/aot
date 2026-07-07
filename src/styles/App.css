@@ -259,28 +259,6 @@
   margin-top: 32px;
 }
 
-.hero-proof {
-  display: flex;
-  gap: 34px;
-  margin-top: 45px;
-}
-
-.hero-proof div {
-  display: flex;
-  flex-direction: column;
-}
-
-.hero-proof strong {
-  font-family: Manrope;
-  font-size: 1.3rem;
-}
-
-.hero-proof span {
-  color: #77777f;
-  font-size: .78rem;
-  margin-top: 5px;
-}
-
 .hero-visual {
   position: relative;
   justify-self: stretch;
@@ -1200,26 +1178,36 @@
 }
 
 .price {
-  display: flex;
-  align-items: end;
+  display: grid;
   gap: 9px;
-  margin: 18px 0 8px;
+  margin: 18px 0 10px;
+}
+
+.price-value {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
 }
 
 .price strong {
   font-family: Manrope;
   font-size: 4rem;
-  letter-spacing: -.06em;
+  line-height: .9;
+  letter-spacing: 0;
 }
 
 .price span {
-  color: #8b8b92;
-  margin-bottom: 11px;
+  color: #a1a1aa;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
-.price-note {
-  color: #68686f;
-  font-size: .74rem;
+.price p {
+  margin: 0;
+  color: #8f8f97;
+  font-size: .88rem;
+  line-height: 1.45;
 }
 
 .price-card ul {
@@ -1442,8 +1430,7 @@
     margin-inline: auto;
   }
 
-  .hero-actions,
-  .hero-proof {
+  .hero-actions {
     justify-content: center;
   }
 
@@ -1576,14 +1563,6 @@
 
   .hero-actions .button {
     width: 100%;
-  }
-
-  .hero-proof {
-    gap: 18px;
-  }
-
-  .hero-proof strong {
-    font-size: 1.08rem;
   }
 
   .fit-list {
