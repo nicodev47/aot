@@ -4,13 +4,13 @@ const methodItems = [
   {
     icon: Users,
     number: '01',
-    title: 'Chiamata di Coaching 1-1',
+    title: 'Chiamata Introduttiva Privata 1-1',
     text: "La strategia ti verrà spiegata step-by-step all'interno di una chiamata privata individuale, dove ti verranno spiegati tutti i concetti chiave e i modelli d'ingresso utilizzando esempi pratici direttamente sul grafico. Alla fine della chiamata avrai un chiaro piano operativo ed una strategia da utilizzare fin da subito.",
   },
   {
     icon: Crosshair,
     number: '02',
-    title: "Strategia Scalping e modelli d'ingresso",
+    title: "Strategia Completa e Modelli D'ingresso",
     text: "Partiamo dai concetti principali della strategia, passiamo ai modelli d'ingresso e costruiamo un'analisi completa. Infine strutturiamo un piano operativo per consentirti di ottenere i tuoi primi risultati il prima possibile.",
   },
   {
@@ -22,8 +22,8 @@ const methodItems = [
   {
     icon: Clock3,
     number: '04',
-    title: 'Accesso alla Community e Supporto Diretto',
-    text: 'All’interno della community condividiamo le nostre esecuzioni, rispondiamo a dubbi domande e diamo consigli pratici su come migliorare le proprie analisi ed esecuzioni in modo che comprendi esattamente cosa mantenere e cosa correggere dietro ogni analisi.',
+    title: 'Community e Q&A',
+    text: 'Analizziamo e revisioniamo le tue esecuzioni, identifichiamo trade corretti, entrate anticipate, occasioni saltate e problemi di gestione. Capisci esattamente cosa mantenere e cosa correggere.',
   },
 ]
 
