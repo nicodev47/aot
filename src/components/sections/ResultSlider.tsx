@@ -13,6 +13,16 @@ function rotateImages(images: string[], offset: number): string[] {
   return [...images.slice(safeOffset), ...images.slice(0, safeOffset)]
 }
 
+function buildMarqueeImages(images: string[]): string[] {
+  if (images.length === 0) return images
+
+  const minLoopItems = 12
+  const repeatCount = Math.max(1, Math.ceil(minLoopItems / images.length))
+  const loopImages = Array.from({ length: repeatCount }).flatMap(() => images)
+
+  return [...loopImages, ...loopImages]
+}
+
 export default function ResultSlider({
   images,
   reverse = false,
@@ -21,7 +31,7 @@ export default function ResultSlider({
 }: ResultSliderProps) {
   const visualOffset = offset ?? (reverse ? Math.ceil(images.length / 2) : 0)
   const orderedImages = rotateImages(images, visualOffset)
-  const marqueeImages = [...orderedImages, ...orderedImages]
+  const marqueeImages = buildMarqueeImages(orderedImages)
 
   return (
     <div className={`results-marquee${reverse ? ' reverse' : ''}`}>

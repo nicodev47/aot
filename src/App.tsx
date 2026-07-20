@@ -6,7 +6,6 @@ import Results from './components/sections/Results'
 import Pricing from './components/sections/Pricing'
 import PayoutMentorship from './components/sections/PayoutMentorship'
 import AdditionalResults from './components/sections/AdditionalResults'
-import EvenMoreResults from './components/sections/EvenMoreResults'
 import FAQ from './components/sections/FAQ'
 import FinalCTA from './components/sections/FinalCTA'
 import './styles/App.css'
@@ -23,7 +22,6 @@ export default function App() {
         <Pricing />
         <PayoutMentorship />
         <AdditionalResults />
-        <EvenMoreResults />
         <FAQ />
         <FinalCTA />
       </main>

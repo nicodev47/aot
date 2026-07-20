@@ -1,24 +1,32 @@
 import { motion } from 'framer-motion'
 import { ArrowRight, Play } from 'lucide-react'
-import VideoEmbed from '../ui/VideoEmbed'
+import StatusBadge from '../ui/StatusBadge'
 import { scrollToPricing, scrollToSection } from '../../utils/navigation'
 import { trackEvent } from '../../utils/tracking'
+
+const memberPhotos = [
+  '/landing-page-photos/Immagine1.jpg',
+  '/landing-page-photos/4241e45d2e8f7a817bfa6b4fe5b01c51.webp',
+  '/landing-page-photos/5228de111c9cf905c0967eb500396f27.webp',
+  '/landing-page-photos/75e04dfda8b3772e7b5a267f3db6e8d5.webp',
+  '/landing-page-photos/b3358a6bc9916fdb93c4fe2d85b62612.webp',
+]
 
 export default function Hero() {
   function handleAccessClick(): void {
     trackEvent('cta_accesso_percorso_click', {
       location: 'hero',
-      label: 'Accedi al Percorso',
+      label: 'Accedi alla Community',
     })
     scrollToPricing()
   }
 
-  function handleResultsClick(): void {
-    trackEvent('results_click', {
+  function handleMentorshipClick(): void {
+    trackEvent('mentorship_click', {
       location: 'hero',
-      label: 'Vai ai Risultati',
+      label: 'Scopri il Percorso di Mentorship',
     })
-    scrollToSection('risultati')
+    scrollToSection('affiancamento')
   }
 
   return (
@@ -34,76 +42,77 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <div className="pill">
-            <span className="live-dot" />
-            Strategia Scalping con Esecuzioni Giornaliere
-          </div>
+          <StatusBadge
+            text="Community e Percorso di Mentorship"
+            animatedDot
+          />
 
           <h1>
-            Una strategia ed un percorso di mentorship per farti ottenere
+            Costruisci un processo
             <br />
-            <span> i tuoi primi risultati in meno di 90 giorni.</span>
+            che sai riconoscere, eseguire
+            <br />
+            <span>e replicare con costanza.</span>
           </h1>
 
           <p className="hero-lead">
-            Scopri una strategia di scalping con modelli d’ingresso ed esecuzioni sul timeframe a 1 minuto, costruita per darti esecuzioni precise e costanti all’interno del mercato.
+            Accedi alla Community dove imparerai la Strategia ed i modelli
+            d'ingresso che utilizziamo insieme a Sessioni Giornaliere oppure
+            scegli un Percorso di Mentorship one-to-one per essere seguito personalmente fino
+            al tuo primo payout.
           </p>
+
+          <div className="hero-video-wrap">
+            <div className="hero-video">
+              <video
+                src="/results/0708%20(1).mp4"
+                aria-label="Eclipse Trading Club - Community"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+              />
+            </div>
+          </div>
 
           <div className="hero-actions">
             <button
               className="button button-primary"
               onClick={handleAccessClick}
             >
-              Accedi al Percorso
+              Accedi alla Community
               <ArrowRight size={18} />
             </button>
 
             <button
               className="button button-ghost"
-              onClick={handleResultsClick}
+              onClick={handleMentorshipClick}
             >
               <Play size={17} fill="currentColor" />
-              Vai ai Risultati
+              Scopri la Mentorship
             </button>
           </div>
 
-          <div className="hero-proof">
-            <div>
-              <strong>1:1</strong>
-              <span>Spiegazione Privata</span>
+          <div className="scroll-cue">
+            <div className="student-cue">
+              <div className="member-avatar-stack" aria-hidden="true">
+                {memberPhotos.map((photo, index) => (
+                  <span className="member-avatar" key={photo}>
+                    <img src={photo} alt="" loading={index === 0 ? 'eager' : 'lazy'} />
+                  </span>
+                ))}
+              </div>
+              <span>Unisciti ai nostri 350+ studenti</span>
             </div>
-            <div>
-              <strong>1 min</strong>
-              <span>Timeframe Operativo</span>
-            </div>
-            <div>
-              <strong>1 mese</strong>
-              <span>Di community Inclusa</span>
-            </div>
+            <button
+              className="method-cue"
+              onClick={() => scrollToSection('metodo')}
+            >
+              Scopri il metodo
+            </button>
           </div>
         </motion.div>
-
-        <motion.div
-          className="hero-visual"
-          initial={{ opacity: 0, scale: 0.94, x: 30 }}
-          animate={{ opacity: 1, scale: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.15 }}
-        >
-          <div className="hero-video">
-            <VideoEmbed
-              videoId="1K8jF45Er9A"
-              title="Eclipse Trading Club - Community"
-              autoPlay
-              muted
-              loop
-            />
-          </div>
-        </motion.div>
-      </div>
-
-      <div className="scroll-cue">
-        <span>SCOPRI IL METODO</span>
-        <i />
       </div>
     </section>
   )

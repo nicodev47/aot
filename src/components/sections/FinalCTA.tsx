@@ -16,16 +16,12 @@ export default function FinalCTA() {
       <div className="final-glow" />
 
       <div className="container final-inner">
-        <span className="eyebrow">
-          DIVENTA LA NOSTRA PROSSIMA STORIA DI SUCCESSO
-        </span>
-        <h2>
-          Costruisci un processo che sai riconoscere, eseguire e replicare con
-          costanza.
-        </h2>
+        <span className="eyebrow">IL PROSSIMO PASSO</span>
+        <h2>È il momento di iniziare.</h2>
         <p>
-          Entra nel percorso e porta struttura, chiarezza e continuità nella tua
-          operatività sui Futures.
+          Accedi alla Community e inizia a costruire un processo chiaro,
+          disciplinato e replicabile insieme a noi nelle Sessioni Giornaliere
+          e diventa la nostra prossima storia di successo.
         </p>
         <button
           className="button button-primary"

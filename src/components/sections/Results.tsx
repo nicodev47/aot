@@ -1,8 +1,4 @@
-import {
-  additionalResultImages,
-  evenMoreResultImages,
-  resultImages,
-} from '../../data/siteData'
+import { resultImages } from '../../data/siteData'
 import ResultSlider from './ResultSlider'
 
 function splitImagesForRows(images: string[]) {
@@ -13,13 +9,7 @@ function splitImagesForRows(images: string[]) {
 }
 
 export default function Results() {
-  const allResultImages = [
-    ...resultImages,
-    ...additionalResultImages,
-    ...evenMoreResultImages,
-  ]
-
-  const { firstRowImages, secondRowImages } = splitImagesForRows(allResultImages)
+  const { firstRowImages, secondRowImages } = splitImagesForRows(resultImages)
 
   return (
     <section className="section results" id="risultati">

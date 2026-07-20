@@ -1,7 +1,7 @@
 const mentorshipItems = [
   {
     number: '01',
-    title: 'Strategia Completa e Modelli D’ingresso',
+    title: 'Strategia Scalping e modelli d’ingresso giornalieri',
     text: 'Partiamo dai concetti principali della strategia, passiamo ai modelli d’ingresso e costruiamo un’analisi completa. Infine strutturiamo un piano operativo per consentirti di ottenere i tuoi primi risultati il prima possibile.',
   },
   {
@@ -11,8 +11,8 @@ const mentorshipItems = [
   },
   {
     number: '03',
-    title: 'Community e Q&A',
-    text: 'Analizziamo e revisioniamo le tue esecuzioni, identifichiamo trade corretti, entrate anticipate, occasioni saltate e problemi di gestione. Capisci esattamente cosa mantenere e cosa correggere.',
+    title: 'Accesso alla Community e Supporto',
+    text: 'All’interno della community condividiamo le nostre esecuzioni, rispondiamo a dubbi domande e diamo consigli pratici su come migliorare le proprie analisi ed esecuzioni in modo che comprendi esattamente cosa mantenere e cosa correggere dietro ogni analisi.',
   },
   {
     number: '04',
@@ -38,9 +38,9 @@ export default function Mentorship() {
         <div className="mentorship-heading">
           <span className="eyebrow">CHIAMATA 1:1</span>
           <h2>
-            Non devi imparare tutto da solo.
+            Verrai guidato fin dai tuoi primi passi
             <br />
-            <em>Verrai guidato fin dai tuoi primi passi con la strategia.</em>
+            con la strategia <em>fino ad essere costante.</em>
           </h2>
           <p className="large-copy">
             La strategia ti verrà spiegata in modo semplice e chiaro durante una

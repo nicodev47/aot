@@ -3,6 +3,7 @@ import { Check } from 'lucide-react'
 import callVisual from '../../assets/images/nico-call.png'
 import { DISCOVERY_CALL_URL } from '../../data/siteData'
 import { trackEvent } from '../../utils/tracking'
+import StatusBadge from '../ui/StatusBadge'
 
 const supportPoints = [
   'Vuole accelerare il proprio percorso verso il primo payout',
@@ -61,16 +62,29 @@ export default function PayoutMentorship() {
 
   return (
     <section className="section payout-mentorship" id="affiancamento">
+      <div className="container payout-mentorship-intro">
+        <span className="eyebrow">mentorship privata</span>
+        <h2>Vuoi Accelerare il tuo Percorso?</h2>
+        <p>
+          Se cerchi un percorso più personale ti offriamo la possibilità di andare
+          a strutturare un percorso di mentorship one-to-one dove verrai seguito
+          fino al tuo primo payout.
+        </p>
+      </div>
+
       <div className="container payout-mentorship-inner">
         <div className="payout-mentorship-copy">
           <div className="payout-call-visual">
             <img src={callVisual} alt="Nico Coach" />
           </div>
 
-          <span className="eyebrow">PER CHI VUOLE DI PIÙ</span>
+          <StatusBadge
+            text="Percorso di Mentorship +Accesso Lifetime alla Community"
+            animatedDot
+          />
 
           <h2>
-            Per chi cerca un percorso di mentorship.
+            Per chi preferisce un percorso di mentorship.
             <br />
             <em>Ti seguiamo fino al primo payout.</em>
           </h2>

@@ -8,14 +8,19 @@ export default function Navbar() {
           className="brand"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          {/* <span className="brand-mark">ECLIPSE</span> */}
+          <img
+            className="brand-logo"
+            src="/eclipse-logo.svg"
+            alt=""
+          />
           <span>ECLIPSE TRADING CLUB</span>
         </button>
 
         <nav className="nav-links">
           <button onClick={() => scrollToSection('metodo')}>Strategia</button>
           <button onClick={() => scrollToSection('risultati')}>Risultati</button>
-          <button onClick={() => scrollToSection('affiancamento')}>Percorso avanzato</button>
+          <button onClick={scrollToPricing}>Community</button>
+          <button onClick={() => scrollToSection('affiancamento')}>Percorso di Mentorship</button>
           <button onClick={() => scrollToSection('faq')}>FAQ</button>
         </nav>
 
