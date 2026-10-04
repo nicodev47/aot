@@ -64,13 +64,12 @@ export default function Hero() {
               <video
                 src="/hero.mp4"
                 poster="/hero-poster.jpg"
-                preload="metadata"
+                preload="auto"
                 aria-label="Eclipse Trading Club - Community"
                 autoPlay
                 muted
                 loop
                 playsInline
-                controls
               />
             </div>
           </div>
