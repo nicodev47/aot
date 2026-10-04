@@ -8,6 +8,7 @@ import PayoutMentorship from './components/sections/PayoutMentorship'
 import AdditionalResults from './components/sections/AdditionalResults'
 import FAQ from './components/sections/FAQ'
 import FinalCTA from './components/sections/FinalCTA'
+import MobileCTA from './components/layout/MobileCTA'
 import './styles/App.css'
 
 export default function App() {
@@ -19,14 +20,15 @@ export default function App() {
         <Hero />
         <Method />
         <Results />
+        <AdditionalResults />
         <Pricing />
         <PayoutMentorship />
-        <AdditionalResults />
         <FAQ />
         <FinalCTA />
       </main>
 
       <Footer />
+      <MobileCTA />
     </div>
   )
 }

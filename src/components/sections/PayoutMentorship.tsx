@@ -6,10 +6,10 @@ import { trackEvent } from '../../utils/tracking'
 import StatusBadge from '../ui/StatusBadge'
 
 const supportPoints = [
-  'Vuole accelerare il proprio percorso verso il primo payout',
-  'Preferisce essere seguito 1-1 privatamente',
-  'Sta cercando un confronto diretto durante il proprio percorso',
-  'Cerca maggiore fiducia e consapevolezza nelle proprie esecuzioni',
+  'Vuoi accelerare il tuo percorso verso il primo payout',
+  'Preferisci essere seguito 1-1 in privato',
+  'Cerchi un confronto diretto durante tutto il percorso',
+  'Vuoi più fiducia e consapevolezza nelle tue esecuzioni',
 ]
 
 const calendlyEmbedUrl = `${DISCOVERY_CALL_URL}?hide_gdpr_banner=1&background_color=09090a&text_color=ffffff&primary_color=ff334d`
@@ -64,11 +64,10 @@ export default function PayoutMentorship() {
     <section className="section payout-mentorship" id="affiancamento">
       <div className="container payout-mentorship-intro">
         <span className="eyebrow">mentorship privata</span>
-        <h2>Vuoi Accelerare il tuo Percorso?</h2>
+        <h2>Vuoi accelerare il tuo percorso?</h2>
         <p>
-          Se cerchi un percorso più personale ti offriamo la possibilità di andare
-          a strutturare un percorso di mentorship one-to-one dove verrai seguito
-          fino al tuo primo payout.
+          Se cerchi un percorso più personale, puoi costruire con noi una
+          mentorship one-to-one e farti seguire fino al tuo primo payout.
         </p>
       </div>
 
@@ -79,7 +78,7 @@ export default function PayoutMentorship() {
           </div>
 
           <StatusBadge
-            text="Percorso di Mentorship +Accesso Lifetime alla Community"
+            text="Mentorship + accesso lifetime alla Community"
             animatedDot
           />
 
@@ -90,11 +89,14 @@ export default function PayoutMentorship() {
           </h2>
 
           <p className="payout-mentorship-lead">
-            Un percorso dedicato a chi desidera qualcosa di più del semplice accesso alla community. È possibile andare a strutturare un percorso di mentorship direttamente con me dove andremo a lavorare sulla tua situazione nel dettaglio ed andremo a strutturare insieme un percorso di mentorship privato fino al raggiungimento del tuo primo payout.
+            Un percorso per chi vuole qualcosa di più del semplice accesso
+            alla community. Lavoriamo insieme, direttamente con me, sulla tua
+            situazione nel dettaglio e costruiamo un percorso privato fino al
+            raggiungimento del tuo primo payout.
           </p>
 
           <div className="payout-support">
-            <h3>Questo percorso è perfetto per chi:</h3>
+            <h3>Questo percorso fa per te se:</h3>
 
             <div className="payout-support-list">
               {supportPoints.map((point) => (

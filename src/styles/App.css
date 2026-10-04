@@ -127,7 +127,7 @@
   border: 0;
   background: none;
   color: #fff;
-  font-family: Manrope;
+  font-family: Manrope, Inter, sans-serif;
   font-weight: 800;
   letter-spacing: .04em;
   display: flex;
@@ -353,7 +353,7 @@
 }
 
 .hero-proof strong {
-  font-family: Manrope;
+  font-family: Manrope, Inter, sans-serif;
   font-size: 1.3rem;
 }
 
@@ -703,7 +703,7 @@
 .mentorship-copy h2,
 .faq-heading h2,
 .final-inner h2 {
-  font-family: Manrope;
+  font-family: Manrope, Inter, sans-serif;
   font-size: clamp(2.35rem, 4vw, 4.4rem);
   line-height: 1.05;
   letter-spacing: -.05em;
@@ -762,7 +762,7 @@
   top: 15px;
   color: #252528;
   font-size: 2.8rem;
-  font-family: Manrope;
+  font-family: Manrope, Inter, sans-serif;
   font-weight: 800;
 }
 
@@ -859,7 +859,7 @@
 }
 
 .mentor-silhouette span {
-  font-family: Manrope;
+  font-family: Manrope, Inter, sans-serif;
   font-size: 2.2rem;
   letter-spacing: .14em;
   color: #5b151f;
@@ -1394,7 +1394,7 @@
 }
 
 .price-card h3 {
-  font-family: Manrope;
+  font-family: Manrope, Inter, sans-serif;
   font-size: 1.22rem;
   margin-top: 18px;
 }
@@ -1415,7 +1415,7 @@
 }
 
 .price strong {
-  font-family: Manrope;
+  font-family: Manrope, Inter, sans-serif;
   font-size: 3.75rem;
   line-height: .9;
   letter-spacing: -.06em;
@@ -1430,7 +1430,7 @@
 .price-original {
   position: relative;
   color: rgba(255, 255, 255, .42) !important;
-  font-family: Manrope;
+  font-family: Manrope, Inter, sans-serif;
   font-size: clamp(1.25rem, 1.85vw, 1.65rem) !important;
   font-weight: 800;
   line-height: .95;
@@ -3493,4 +3493,73 @@
   font-size: .78rem;
   line-height: 1.6;
   text-align: center;
+}
+
+/* ---- mobile sticky CTA ---- */
+.mobile-cta {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  .mobile-cta {
+    visibility: hidden;
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 45;
+    display: block;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    background: linear-gradient(to top, rgba(5, 5, 5, .96) 55%, rgba(5, 5, 5, 0));
+    transform: translateY(110%);
+    transition: transform .3s ease, visibility 0s linear .3s;
+    pointer-events: none;
+  }
+
+  .mobile-cta.visible {
+    visibility: visible;
+    transform: translateY(0);
+    transition: transform .3s ease, visibility 0s;
+    pointer-events: auto;
+  }
+
+  .mobile-cta .button {
+    width: 100%;
+  }
+
+  .footer {
+    padding-bottom: 96px;
+  }
+}
+
+.price-secure {
+  margin-top: 14px;
+  color: #7a7a82;
+  font-size: .78rem;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .hero-video {
+    aspect-ratio: 4 / 5;
+  }
+
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-copy > .hero-actions {
+    order: 1;
+    width: 100%;
+  }
+
+  .hero-copy > .hero-video-wrap {
+    order: 2;
+    margin-top: 28px;
+    margin-bottom: 8px;
+  }
+
+  .hero-copy > .scroll-cue {
+    order: 3;
+  }
 }

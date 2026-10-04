@@ -1,6 +1,7 @@
 // Eclipse Trading Club - hero motion graphics. Deterministic: window.render(t) draws frame at time t (seconds).
-const W = 1920, H = 1080, DUR = 32;
-const ACC = '#FF5C00';
+const P = new URLSearchParams(location.search).has('p'); // portrait variant (mobile)
+const W = P ? 1080 : 1920, H = P ? 1350 : 1080, DUR = 32;
+const ACC = '#ff334d'; // site accent (brand guideline alternative: #FF5C00)
 const cv = document.getElementById('c');
 cv.width = W; cv.height = H;
 const ctx = cv.getContext('2d');
@@ -64,9 +65,9 @@ function logo(x, y, r) {
 function background(t) {
   ctx.fillStyle = '#060606'; ctx.fillRect(0, 0, W, H);
   ctx.save();
-  const gx = 1500 + Math.sin(t * .35) * 180, gy = 380 + Math.cos(t * .28) * 140;
-  glow(gx, gy, 760, 'rgba(255,92,0,A)', .16);
-  glow(300 + Math.cos(t * .3) * 120, 900, 620, 'rgba(255,92,0,A)', .07);
+  const gx = (P ? 700 : 1500) + Math.sin(t * .35) * 180, gy = (P ? 700 : 380) + Math.cos(t * .28) * 140;
+  glow(gx, gy, 760, 'rgba(255,51,77,A)', .16);
+  glow(300 + Math.cos(t * .3) * 120, 900, 620, 'rgba(255,51,77,A)', .07);
   ctx.strokeStyle = 'rgba(255,255,255,.035)'; ctx.lineWidth = 1;
   const off = (t * 10) % 90;
   ctx.beginPath();
@@ -111,15 +112,20 @@ function drawCandles(cs, x, y, w, h, progress, lo, hi, o = {}) {
 }
 
 // ---------- scene scaffolding ----------
-const LX = 140;
+const LX = P ? 90 : 140, LY = P ? 235 : 318, TY = P ? 340 : 430;
+const PS = 1.12;
+function panel(fn) {
+  if (!P) return fn();
+  ctx.save(); ctx.translate(540 - 1390 * PS, 485 - 200 * PS); ctx.scale(PS, PS); fn(); ctx.restore();
+}
 function label(num, name, lt) {
   const a = eo(prog(lt, .15, .7));
   ctx.save(); ctx.globalAlpha *= a;
-  ctx.fillStyle = ACC; ctx.fillRect(LX, 318, 56 * a, 4);
-  txt(`${num}  ${name}`, LX + 76, 328, { size: 24, weight: 700, color: ACC, ls: 4 });
+  ctx.fillStyle = ACC; ctx.fillRect(LX, LY, 56 * a, 4);
+  txt(`${num}  ${name}`, LX + 76, LY + 10, { size: 24, weight: 700, color: ACC, ls: 4 });
   ctx.restore();
 }
-function title(lines, lt, y0 = 430) {
+function title(lines, lt, y0 = TY) {
   lines.forEach((ln, i) => {
     const a = eo(prog(lt, .3 + i * .18, .9 + i * .18));
     ctx.save(); ctx.globalAlpha *= a; ctx.translate(0, (1 - a) * 36);
@@ -140,18 +146,20 @@ function sHook(lt) {
   ctx.save(); ctx.globalAlpha *= .22;
   drawCandles(hookC, 80, 700, W - 160, 300, prog(lt, .1, 3.0), lo, hi);
   ctx.restore();
-  const lines = [['Costruisci', 'un', 'processo'], ['che', 'sai', 'riconoscere,'], ['eseguire', 'e', 'replicare.']];
+  const lines = [['Cosa', 'trovi', 'dentro'], ['Eclipse', 'Trading', 'Club.']];
+  const hs = P ? 78 : 92;
+  logo(W / 2, 330, 54 * eob(prog(lt, .1, .7)));
   let wi = 0;
   lines.forEach((ws, li) => {
     const full = ws.join(' ');
-    const total = measure(full, 92, 700);
+    const total = measure(full, hs, 700);
     let x = W / 2 - total / 2;
     ws.forEach(w => {
       const a = eo(prog(lt, .25 + wi * .11, .8 + wi * .11));
       ctx.save(); ctx.globalAlpha *= a; ctx.translate(0, (1 - a) * 34);
-      txt(w, x, 480 + li * 112, { size: 92, weight: 700, color: w === 'replicare.' ? ACC : '#fff' });
+      txt(w, x, 520 + li * 118, { size: hs, weight: 700, color: li === 1 ? ACC : '#fff' });
       ctx.restore();
-      x += measure(w + ' ', 92, 700); wi++;
+      x += measure(w + ' ', hs, 700); wi++;
     });
   });
 }
@@ -160,6 +168,7 @@ const lessons = ['I concetti principali', 'Esempi pratici', 'Modelli d’ingress
 function sCourse(lt) {
   label('01', 'IL CORSO', lt);
   title([['Corso completo'], [['step-by-step', true]]], lt);
+  panel(() => {
   const x = 1000, y = 220, w = 780, h = 600;
   const a = eo(prog(lt, .2, .8));
   ctx.save(); ctx.globalAlpha *= a; ctx.translate((1 - a) * 60, 0);
@@ -192,6 +201,7 @@ function sCourse(lt) {
   rr(bx, by, bw, 12, 6); ctx.fillStyle = 'rgba(255,255,255,.08)'; ctx.fill();
   rr(bx, by, Math.max(12, bw * bar), 12, 6); ctx.fillStyle = ACC; ctx.fill();
   ctx.restore();
+  })
 }
 
 // Trade setup chart
@@ -213,6 +223,7 @@ const setupC = pre.concat(post);
 function sSetup(lt) {
   label('02', 'MODELLI D’INGRESSO', lt);
   title([['Modelli d’ingresso'], [['e schematiche', true]]], lt);
+  panel(() => {
   const x = 980, y = 200, w = 810, h = 620;
   const a = eo(prog(lt, .2, .8));
   ctx.save(); ctx.globalAlpha *= a; ctx.translate((1 - a) * 60, 0);
@@ -232,7 +243,7 @@ function sSetup(lt) {
   const zTp = eo(prog(lt, 3.5, 4.1));
   if (zTp > 0) {
     const t0 = sy0(tpP), e0 = sy0(entryP);
-    ctx.fillStyle = 'rgba(255,92,0,.16)'; ctx.fillRect(zx, e0 - (e0 - t0) * zTp, zw, (e0 - t0) * zTp);
+    ctx.fillStyle = 'rgba(255,51,77,.16)'; ctx.fillRect(zx, e0 - (e0 - t0) * zTp, zw, (e0 - t0) * zTp);
     ctx.strokeStyle = ACC; ctx.lineWidth = 2; ctx.setLineDash([10, 8]);
     ctx.beginPath(); ctx.moveTo(zx, t0); ctx.lineTo(zx + zw * zTp, t0); ctx.stroke(); ctx.setLineDash([]);
     txt('TAKE PROFIT', zx + zw - 12, t0 + 32, { size: 20, weight: 700, color: ACC, align: 'right', ls: 2, alpha: zTp });
@@ -277,16 +288,18 @@ function sSetup(lt) {
     ctx.restore();
   }
   ctx.restore();
+  })
 }
 
 function sSession(lt) {
   label('03', 'SESSIONI GIORNALIERE', lt);
   title([['Ogni giorno'], [['in diretta', true]]], lt);
+  panel(() => {
   const cx = 1390, cy = 520, R = 240;
   const a = eo(prog(lt, .2, .8));
   ctx.save(); ctx.globalAlpha *= a; ctx.translate((1 - a) * 60, 0);
   const p = eio(prog(lt, .8, 4.2));
-  glow(cx, cy, 420, 'rgba(255,92,0,A)', .10 + .08 * p);
+  glow(cx, cy, 420, 'rgba(255,51,77,A)', .10 + .08 * p);
   ctx.lineWidth = 18; ctx.lineCap = 'round';
   ctx.strokeStyle = 'rgba(255,255,255,.08)';
   ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2); ctx.stroke();
@@ -304,12 +317,13 @@ function sSession(lt) {
   txt('APERTURA NASDAQ', cx, cy + 96, { size: 24, weight: 700, color: '#8a8a92', align: 'center', ls: 5 });
   // live badge
   const pulse = .5 + .5 * Math.sin(lt * 6);
-  rr(cx - 82, cy - 150, 164, 46, 23); ctx.fillStyle = 'rgba(255,92,0,.14)'; ctx.fill();
-  ctx.strokeStyle = 'rgba(255,92,0,.6)'; ctx.lineWidth = 2; ctx.stroke();
+  rr(cx - 82, cy - 150, 164, 46, 23); ctx.fillStyle = 'rgba(255,51,77,.14)'; ctx.fill();
+  ctx.strokeStyle = 'rgba(255,51,77,.6)'; ctx.lineWidth = 2; ctx.stroke();
   ctx.fillStyle = ACC; ctx.globalAlpha *= (.55 + .45 * pulse); ctx.beginPath(); ctx.arc(cx - 46, cy - 127, 7, 0, Math.PI * 2); ctx.fill();
   ctx.globalAlpha = 1 * a;
   txt('LIVE', cx - 22, cy - 119, { size: 24, weight: 700, color: ACC, ls: 4 });
   ctx.restore();
+  })
 }
 
 const bubbles = [
@@ -321,6 +335,7 @@ const bubbles = [
 function sCommunity(lt) {
   label('04', 'COMMUNITY', lt);
   title([['Community privata'], [['e supporto', true]]], lt);
+  panel(() => {
   const x = 1000, w = 780;
   bubbles.forEach((b, i) => {
     const t0 = .8 + i * .85, k = eob(prog(lt, t0, t0 + .45));
@@ -334,8 +349,8 @@ function sCommunity(lt) {
     ctx.fillStyle = b.side === 'l' ? '#55555d' : '#fff'; ctx.beginPath(); ctx.arc(ax, y + 28, 9, 0, Math.PI * 2); ctx.fill();
     ctx.beginPath(); ctx.arc(ax, y + 54, 16, Math.PI, 0); ctx.fill();
     rr(bx, y, bw, bh, 36);
-    ctx.fillStyle = b.side === 'l' ? 'rgba(255,255,255,.07)' : 'rgba(255,92,0,.2)'; ctx.fill();
-    ctx.strokeStyle = b.side === 'l' ? 'rgba(255,255,255,.12)' : 'rgba(255,92,0,.55)'; ctx.lineWidth = 2; ctx.stroke();
+    ctx.fillStyle = b.side === 'l' ? 'rgba(255,255,255,.07)' : 'rgba(255,51,77,.2)'; ctx.fill();
+    ctx.strokeStyle = b.side === 'l' ? 'rgba(255,255,255,.12)' : 'rgba(255,51,77,.55)'; ctx.lineWidth = 2; ctx.stroke();
     txt(b.t, bx + 32, y + 46, { size, weight: 400 });
     ctx.restore();
   });
@@ -346,6 +361,7 @@ function sCommunity(lt) {
   txt('studenti nella', x + 300, 756, { size: 30, weight: 400, color: '#d0d0d5' });
   txt('community privata', x + 300, 796, { size: 30, weight: 400, color: '#d0d0d5' });
   ctx.restore();
+  })
 }
 
 const steps = [
@@ -357,6 +373,7 @@ const steps = [
 function sMentor(lt) {
   label('05', 'MENTORSHIP', lt);
   title([['Mentorship'], [['one-to-one', true]]], lt);
+  panel(() => {
   const nx = 1060, y0 = 270, gap = 150;
   const a = eo(prog(lt, .2, .8));
   ctx.save(); ctx.globalAlpha *= a;
@@ -369,7 +386,7 @@ function sMentor(lt) {
     const reach = i / 3, k = eob(prog(total, reach - .02, reach + .1 + (i === 0 ? .1 : 0)));
     const y = y0 + gap * i, last = i === 3;
     const kk = i === 0 ? eob(prog(lt, .6, 1.1)) : k;
-    if (kk > 0 && last) glow(nx, y, 160, 'rgba(255,92,0,A)', .35 * clamp(kk));
+    if (kk > 0 && last) glow(nx, y, 160, 'rgba(255,51,77,A)', .35 * clamp(kk));
     ctx.fillStyle = '#060606'; ctx.beginPath(); ctx.arc(nx, y, last ? 36 : 28, 0, Math.PI * 2); ctx.fill();
     ctx.lineWidth = 5; ctx.strokeStyle = kk > 0 ? ACC : 'rgba(255,255,255,.2)'; ctx.stroke();
     if (kk > 0) { ctx.fillStyle = ACC; ctx.beginPath(); ctx.arc(nx, y, (last ? 22 : 14) * clamp(kk, 0, 1.15), 0, Math.PI * 2); ctx.fill(); }
@@ -380,35 +397,42 @@ function sMentor(lt) {
     ctx.restore();
   });
   ctx.restore();
+  })
 }
 
 function sCTA(lt) {
+  const dy = P ? 60 : 0;
   const a = eo(prog(lt, .1, .8));
   ctx.save(); ctx.globalAlpha *= a;
-  glow(W / 2, 520, 700, 'rgba(255,92,0,A)', .16);
+  glow(W / 2, 520, 700, 'rgba(255,51,77,A)', .16);
   logo(W / 2, 250, 52 * eob(prog(lt, .1, .8)));
   txt('ECLIPSE TRADING CLUB', W / 2, 360, { size: 26, weight: 700, color: '#9b9ba2', align: 'center', ls: 6 });
   const t = eo(prog(lt, .4, 1.1));
   ctx.save(); ctx.globalAlpha *= t; ctx.translate(0, (1 - t) * 30);
-  txt('Entra nella Community', W / 2, 500, { size: 104, weight: 700, align: 'center' });
+  if (P) { txt('Entra nella', W / 2, 490, { size: 104, weight: 700, align: 'center' }); txt('Community', W / 2, 600, { size: 104, weight: 700, align: 'center' }); }
+  else txt('Entra nella Community', W / 2, 500, { size: 104, weight: 700, align: 'center' });
   ctx.restore();
   const p2 = eo(prog(lt, .8, 1.5));
   ctx.save(); ctx.globalAlpha *= p2;
-  txt('45€ / mese · Nessun vincolo', W / 2, 590, { size: 44, weight: 400, color: '#d0d0d5', align: 'center' });
+  txt('45€ / mese · Nessun vincolo', W / 2, 590 + dy, { size: 44, weight: 400, color: '#d0d0d5', align: 'center' });
   ctx.restore();
   const bb = eob(prog(lt, 1.1, 1.7)), pulse = .5 + .5 * Math.sin(lt * 4);
-  ctx.save(); ctx.translate(W / 2, 710); ctx.scale(bb, bb);
-  ctx.shadowColor = 'rgba(255,92,0,' + (.35 + .3 * pulse) + ')'; ctx.shadowBlur = 40 + 30 * pulse;
+  ctx.save(); ctx.translate(W / 2, 710 + dy); ctx.scale(bb, bb);
+  ctx.shadowColor = 'rgba(255,51,77,' + (.35 + .3 * pulse) + ')'; ctx.shadowBlur = 40 + 30 * pulse;
   rr(-260, -48, 520, 96, 48); ctx.fillStyle = ACC; ctx.fill();
   ctx.shadowBlur = 0;
   txt('Partecipa ora', 0, 14, { size: 40, weight: 700, align: 'center' });
   ctx.restore();
-  txt('Solo a scopo educativo. Il trading comporta rischi, anche di perdita del capitale.', W / 2, 935, { size: 22, weight: 400, color: '#6f6f77', align: 'center', alpha: eo(prog(lt, 1.6, 2.2)) });
+  const da = eo(prog(lt, 1.6, 2.2));
+  if (P) {
+    txt('Solo a scopo educativo. Il trading comporta rischi,', W / 2, 935 + dy, { size: 24, weight: 400, color: '#6f6f77', align: 'center', alpha: da });
+    txt('anche di perdita del capitale.', W / 2, 968 + dy, { size: 24, weight: 400, color: '#6f6f77', align: 'center', alpha: da });
+  } else txt('Solo a scopo educativo. Il trading comporta rischi, anche di perdita del capitale.', W / 2, 935, { size: 22, weight: 400, color: '#6f6f77', align: 'center', alpha: da });
   ctx.restore();
 }
 
 const scenes = [
-  { s: 0, e: 3.5, f: sHook, cap: 'Un metodo chiaro e ripetibile, dalla teoria all’esecuzione.' },
+  { s: 0, e: 3.5, f: sHook, cap: 'Un percorso completo, dalla teoria all’esecuzione.' },
   { s: 3.5, e: 8.5, f: sCourse, cap: 'Dai concetti principali agli esempi pratici e al backtest.' },
   { s: 8.5, e: 13.5, f: sSetup, cap: 'Modelli d’ingresso e schematiche per eseguire con regole precise.' },
   { s: 13.5, e: 18.5, f: sSession, cap: 'Ogni giorno in diretta sull’apertura del Nasdaq, dalle 15:30.' },
@@ -435,13 +459,18 @@ function render(t) {
     const lt = t - sc.s, d = sc.e - sc.s;
     const fin = prog(lt, 0, .35), fout = 1 - prog(lt, d - .35, d);
     ctx.save(); ctx.globalAlpha = (sc.s === 0 ? 1 : fin) * (sc.e === DUR ? 1 : fout);
-    sc.f(lt);
+    if (P && (sc.f === sHook || sc.f === sCTA)) { ctx.save(); ctx.translate(0, 135); sc.f(lt); ctx.restore(); } else sc.f(lt);
     ctx.restore();
     const ca = prog(lt, .6, 1.0) * (1 - prog(lt, d - .45, d - .15));
     if (ca > 0) {
       ctx.save(); ctx.globalAlpha = ca; ctx.translate(0, (1 - ca) * 10);
       ctx.shadowColor = 'rgba(0,0,0,.85)'; ctx.shadowBlur = 14;
-      txt(sc.cap, W / 2, 1010, { size: 40, weight: 400, align: 'center' });
+      if (P) {
+        const ws = sc.cap.split(' '); let best = 0, bd = 1e9;
+        for (let k = 1; k < ws.length; k++) { const d = Math.abs(ws.slice(0, k).join(' ').length - ws.slice(k).join(' ').length); if (d < bd) { bd = d; best = k; } }
+        txt(ws.slice(0, best).join(' '), W / 2, 1262, { size: 38, weight: 400, align: 'center' });
+        txt(ws.slice(best).join(' '), W / 2, 1308, { size: 38, weight: 400, align: 'center' });
+      } else txt(sc.cap, W / 2, 1010, { size: 40, weight: 400, align: 'center' });
       ctx.restore();
     }
   }

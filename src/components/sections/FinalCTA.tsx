@@ -19,9 +19,9 @@ export default function FinalCTA() {
         <span className="eyebrow">IL PROSSIMO PASSO</span>
         <h2>È il momento di iniziare.</h2>
         <p>
-          Accedi alla Community e inizia a costruire un processo chiaro,
-          disciplinato e replicabile insieme a noi nelle Sessioni Giornaliere
-          e diventa la nostra prossima storia di successo.
+          Entra nella Community e inizia a costruire un processo chiaro,
+          disciplinato e replicabile, insieme a noi, nelle Sessioni
+          Giornaliere.
         </p>
         <button
           className="button button-primary"

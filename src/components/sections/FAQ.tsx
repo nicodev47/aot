@@ -33,12 +33,13 @@ export default function FAQ() {
                 <button
                   onClick={() => setOpenFaq(isOpen ? null : index)}
                   aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${index}`}
                 >
                   <span>{item.question}</span>
                   <ChevronDown />
                 </button>
 
-                <div className="faq-answer">
+                <div className="faq-answer" id={`faq-answer-${index}`}>
                   <p>{item.answer}</p>
                 </div>
               </article>

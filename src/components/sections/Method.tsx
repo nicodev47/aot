@@ -1,29 +1,29 @@
-import { BarChart3, Clock3, Crosshair, Users } from 'lucide-react'
+import { Crosshair, GraduationCap, MessagesSquare, Radio } from 'lucide-react'
 
 const methodItems = [
   {
-    icon: Users,
+    icon: GraduationCap,
     number: '01',
-    title: 'Corso Completo Step-by-Step',
-    text: "Partiamo dai concetti principali della strategia, passiamo ai modelli d'ingresso fino a mostrarti come costruire un'analisi completa. Infine ti mostriamo come applichiamo ogni giorno la strategia all'interno delle Sessioni di Gruppo Giornaliere. ",
+    title: 'Corso completo step-by-step',
+    text: "Parti dai concetti principali della strategia, passi ai modelli d'ingresso e impari a costruire un'analisi completa. Poi vedi come applichiamo tutto, ogni giorno, nelle Sessioni di Gruppo.",
   },
   {
     icon: Crosshair,
     number: '02',
-    title: "Strategia Scalping e modelli d'ingresso",
-    text: "La strategia si basa su modelli d'ingresso in scalping dove la lettura del mercato e della liquidità venogno messi al primo posto. Imparerai a leggere il mercato e strutturare esecuzioni in maniera indipendente. "
+    title: "Scalping e modelli d'ingresso",
+    text: "La strategia si basa su modelli d'ingresso in scalping, con la lettura del mercato e della liquidità al primo posto. Impari a leggere il grafico e a strutturare le esecuzioni in autonomia.",
   },
   {
-    icon: BarChart3,
+    icon: Radio,
     number: '03',
-    title: 'Sessioni Di Gruppo Giornaliere',
-    text: "Ogni giorno all'interno  delle sessioni di gruppo approfondiamo le esecuzioni migliori di ogni giornata operativa, discutendo analisi, possibilità d'ingresso e gestione delle operazioni.",
+    title: 'Sessioni di Gruppo giornaliere',
+    text: "Ogni giorno analizziamo insieme le esecuzioni migliori della giornata: analisi, possibilità d'ingresso e gestione dell'operazione.",
   },
   {
-    icon: Clock3,
+    icon: MessagesSquare,
     number: '04',
-    title: 'Community Privata e Supporto ',
-    text: 'All’interno della community condividiamo le nostre esecuzioni, rispondiamo a dubbi domande e diamo consigli pratici su come migliorare le proprie analisi ed esecuzioni in modo da sapere cosa mantenere e cosa correggere dietro ogni analisi.',
+    title: 'Community privata e supporto',
+    text: 'Nella community condividiamo le nostre esecuzioni, rispondiamo ai dubbi e diamo consigli pratici per migliorare le tue analisi, così sai cosa mantenere e cosa correggere.',
   },
 ]
 
@@ -35,9 +35,8 @@ export default function Method() {
           <span className="eyebrow">IL METODO</span>
 
           <h2>
-            Verrai guidato fin dai tuoi primi passi
-            <br />
-            con la strategia <em>fino ad essere costante.</em>
+            Ti guidiamo dai primi passi fino ad{' '}
+            <em>eseguire con costanza.</em>
           </h2>
         </div>
 

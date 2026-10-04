@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, Play } from 'lucide-react'
 import StatusBadge from '../ui/StatusBadge'
@@ -12,7 +13,25 @@ const memberPhotos = [
   '/landing-page-photos/b3358a6bc9916fdb93c4fe2d85b62612.webp',
 ]
 
+function useMediaQuery(query: string): boolean {
+  const [matches, setMatches] = useState(
+    () => window.matchMedia(query).matches
+  )
+
+  useEffect(() => {
+    const mq = window.matchMedia(query)
+    const handle = () => setMatches(mq.matches)
+    mq.addEventListener('change', handle)
+    return () => mq.removeEventListener('change', handle)
+  }, [query])
+
+  return matches
+}
+
 export default function Hero() {
+  const isMobile = useMediaQuery('(max-width: 640px)')
+  const reduceMotion = useMediaQuery('(prefers-reduced-motion: reduce)')
+
   function handleAccessClick(): void {
     trackEvent('cta_accesso_percorso_click', {
       location: 'hero',
@@ -53,20 +72,24 @@ export default function Hero() {
           </h1>
 
           <p className="hero-lead">
-            Accedi alla Community dove imparerai la Strategia ed i modelli
-            d'ingresso che utilizziamo insieme a Sessioni Giornaliere oppure
-            scegli un Percorso di Mentorship one-to-one per essere seguito personalmente fino
-            al tuo primo payout.
+            Entra nella Community per imparare la strategia e i modelli
+            d'ingresso che usiamo ogni giorno nelle Sessioni in diretta.
+            Oppure scegli la Mentorship one-to-one e fatti seguire
+            personalmente fino al tuo primo payout.
           </p>
 
           <div className="hero-video-wrap">
             <div className="hero-video">
               <video
-                src="/hero.mp4"
-                poster="/hero-poster.jpg"
-                preload="auto"
+                key={isMobile ? 'portrait' : 'landscape'}
+                src={isMobile ? '/hero-portrait.mp4' : '/hero.mp4'}
+                poster={
+                  isMobile ? '/hero-poster-portrait.jpg' : '/hero-poster.jpg'
+                }
+                preload="metadata"
                 aria-label="Eclipse Trading Club - Community"
-                autoPlay
+                autoPlay={!reduceMotion}
+                controls={reduceMotion}
                 muted
                 loop
                 playsInline

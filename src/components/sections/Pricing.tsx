@@ -24,11 +24,11 @@ export default function Pricing() {
     <section className="section offer" id="offerta">
       <div className="container pricing-intro">
         <span className="eyebrow">accesso alla community</span>
-        <h2>Diventa la nostra prossima storia di Successo.</h2>
+        <h2>Un unico accesso. Tutto quello che ti serve.</h2>
         <p>
-          Un unico accesso mensile per studiare la strategia, partecipare alle
-          Sessioni Giornaliere, ricevere feedback sulle tue analisi ed avere
-          accesso alla community.
+          Un solo abbonamento mensile per studiare la strategia, partecipare
+          alle Sessioni Giornaliere, ricevere feedback sulle tue analisi ed
+          entrare nella community privata.
         </p>
       </div>
 
@@ -71,6 +71,10 @@ export default function Pricing() {
               Entra nella Community
               <ArrowRight size={18} />
             </button>
+
+            <p className="price-secure">
+              Pagamento sicuro con Stripe · Disdici quando vuoi
+            </p>
           </article>
         </div>
       </div>
