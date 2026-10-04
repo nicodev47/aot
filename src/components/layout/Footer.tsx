@@ -24,7 +24,9 @@ export default function Footer() {
           </a>
 
           <span>
-            Solo a scopo educativo. Il trading comporta rischi.
+            Solo a scopo educativo. Il trading comporta rischi, anche di perdita
+            totale del capitale investito. Le performance passate non sono
+            garanzia di risultati futuri.
           </span>
         </div>
       </div>

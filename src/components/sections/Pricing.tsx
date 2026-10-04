@@ -17,7 +17,7 @@ export default function Pricing() {
       location: 'pricing',
       label: 'Entra nella Community',
     })
-    window.open(CHECKOUT_URL, '_blank')
+    window.open(CHECKOUT_URL, '_blank', 'noopener,noreferrer')
   }
 
   return (

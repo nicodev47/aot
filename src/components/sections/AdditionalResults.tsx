@@ -27,13 +27,13 @@ const testimonials = [
   },
   {
     rating: 5,
-    text: 'Credo che in Italia ci siano pochissime persone come Nico ed i ragazzi della community che con trasparenza ti spiegano ogni ragionamento che fanno a grafico e sono semre pronti ad aiutrti. ',
+    text: 'Credo che in Italia ci siano pochissime persone come Nico ed i ragazzi della community che con trasparenza ti spiegano ogni ragionamento che fanno a grafico e sono sempre pronti ad aiutarti.',
     name: 'Gabriele P.',
     role: 'Studente Community',
   },
   {
     rating: 5,
-    text: 'Ho fatto tanti percorsi ma non mi era mai capitato dopo una settimana di avere una strategia già chiara, ho fatto sessioni di backtest e forward ogni giorno ed i risulati sono arrivati Top Nico.',
+    text: 'Ho fatto tanti percorsi ma non mi era mai capitato dopo una settimana di avere una strategia già chiara, ho fatto sessioni di backtest e forward ogni giorno ed i risultati sono arrivati Top Nico.',
     name: 'Simone T.',
     role: 'Studente Community',
   },
@@ -45,7 +45,7 @@ const testimonials = [
   },
   {
     rating: 5,
-    text: 'Finalmente un percorso che mette davanti tanta pratica ! avevo bisogno di un percorso che mi spiegasse cosa fare ogni singolo giorno e come analizzare il mercato.',
+    text: 'Finalmente un percorso che mette davanti tanta pratica! Avevo bisogno di un percorso che mi spiegasse cosa fare ogni singolo giorno e come analizzare il mercato.',
     name: 'Alessandro C.',
     role: 'Studente Community',
   },

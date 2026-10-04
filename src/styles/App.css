@@ -176,15 +176,16 @@
   gap: 22px;
 }
 
-.nav-links button {
-  border: 0;
-  background: none;
+.nav-links a {
   color: #9b9ba2;
   font-size: .9rem;
+  text-decoration: none;
   white-space: nowrap;
+  transition: color .2s ease;
 }
 
-.nav-links button:hover {
+.nav-links a:hover,
+.nav-links a:focus-visible {
   color: #fff;
 }
 
@@ -3482,4 +3483,14 @@
   .final-inner h2 {
     font-size: clamp(1.85rem, 8.5vw, 2.4rem);
   }
+}
+
+.results-disclaimer {
+  max-width: 760px;
+  margin: 28px auto 0;
+  padding: 0 20px;
+  color: #7a7a82;
+  font-size: .78rem;
+  line-height: 1.6;
+  text-align: center;
 }

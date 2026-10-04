@@ -48,10 +48,7 @@ export default function Hero() {
           />
 
           <h1>
-            Costruisci un processo
-            <br />
-            che sai riconoscere, eseguire
-            <br />
+            Costruisci un processo che sai riconoscere, eseguire{' '}
             <span>e replicare con costanza.</span>
           </h1>
 
@@ -65,7 +62,9 @@ export default function Hero() {
           <div className="hero-video-wrap">
             <div className="hero-video">
               <video
-                src="/results/0708%20(1).mp4"
+                src="/hero.mp4"
+                poster="/hero-poster.jpg"
+                preload="metadata"
                 aria-label="Eclipse Trading Club - Community"
                 autoPlay
                 muted

@@ -1,6 +1,25 @@
+import type { MouseEvent } from 'react'
 import { scrollToPricing, scrollToSection } from '../../utils/navigation'
 
+const links = [
+  { id: 'metodo', label: 'Strategia' },
+  { id: 'risultati', label: 'Risultati' },
+  { id: 'offerta', label: 'Community' },
+  { id: 'affiancamento', label: 'Percorso di Mentorship' },
+  { id: 'faq', label: 'FAQ' },
+]
+
 export default function Navbar() {
+  function handleNavClick(event: MouseEvent, id: string): void {
+    event.preventDefault()
+
+    if (id === 'offerta') {
+      scrollToPricing()
+    } else {
+      scrollToSection(id)
+    }
+  }
+
   return (
     <header className="navbar">
       <div className="container nav-inner">
@@ -16,12 +35,16 @@ export default function Navbar() {
           <span>ECLIPSE TRADING CLUB</span>
         </button>
 
-        <nav className="nav-links">
-          <button onClick={() => scrollToSection('metodo')}>Strategia</button>
-          <button onClick={() => scrollToSection('risultati')}>Risultati</button>
-          <button onClick={scrollToPricing}>Community</button>
-          <button onClick={() => scrollToSection('affiancamento')}>Percorso di Mentorship</button>
-          <button onClick={() => scrollToSection('faq')}>FAQ</button>
+        <nav className="nav-links" aria-label="Navigazione principale">
+          {links.map((link) => (
+            <a
+              key={link.id}
+              href={`#${link.id}`}
+              onClick={(event) => handleNavClick(event, link.id)}
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
 
         <button

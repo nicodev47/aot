@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Check } from 'lucide-react'
-import callVisual from '../../assets/images/nico-call.png'
+import callVisual from '../../assets/images/nico-call.webp'
 import { DISCOVERY_CALL_URL } from '../../data/siteData'
 import { trackEvent } from '../../utils/tracking'
 import StatusBadge from '../ui/StatusBadge'

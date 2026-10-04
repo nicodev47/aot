@@ -33,6 +33,13 @@ export default function Results() {
         reverse
         label="Feedback studente"
       />
+
+      <p className="results-disclaimer">
+        I risultati mostrati sono casi individuali e non rappresentano la
+        media degli studenti. Le performance passate non sono garanzia di
+        risultati futuri. Il trading comporta un elevato rischio di perdita del
+        capitale.
+      </p>
     </section>
   )
 }

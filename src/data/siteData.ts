@@ -14,12 +14,12 @@ export const resultImages = [
   '/results/result-5.webp',
   '/results/result-6.webp',
   '/results/result-7.webp',
-  '/results/Certificato_Lucid.jpg',
-  '/results/Designer_12.png',
+  '/results/Certificato_Lucid.webp',
+  '/results/Designer_12.webp',
 ]
 
 export const faqs = [
-    {
+  {
     question: 'Il percorso è adatto anche a chi parte da zero?',
     answer:
       'Sì. La strategia viene spiegata partendo dai concetti principali, con esempi pratici, modelli d’ingresso e sessioni di backtest. L’obiettivo è portarti a comprendere ed eseguire il processo in autonomia.',
@@ -27,9 +27,8 @@ export const faqs = [
   {
     question: 'La strategia su che Asset funziona?',
     answer:
-      'La strategia viene applicata sul mercato del Nasdaq in apertura di Mercato dalle 15:30 alle 16:10 per ottenere i risultati migliori, è possibile applicarla anche fuori orario ottenendo risulati simili.',
+      'La strategia viene applicata sul mercato del Nasdaq in apertura di Mercato dalle 15:30 alle 16:10 per ottenere i risultati migliori, è possibile applicarla anche fuori orario ottenendo risultati simili.',
   },
-
   {
     question: 'Come funziona l\'Accesso alla Community?',
     answer:
@@ -43,6 +42,6 @@ export const faqs = [
   {
     question: 'Come funziona il Percorso di Mentorship?',
     answer:
-      'Il percorso di mentorship è un percorso one-to-one dove verrai seguito personalmente fino al tuo primo payout. All\'interno della chiamata conoscitiva andremo a strutturare insieme un percorso di in base alla tua situazione ed esperienza.',
+      'Il percorso di mentorship è un percorso one-to-one dove verrai seguito personalmente fino al tuo primo payout. All\'interno della chiamata conoscitiva andremo a strutturare insieme un percorso in base alla tua situazione ed esperienza.',
   },
 ]
